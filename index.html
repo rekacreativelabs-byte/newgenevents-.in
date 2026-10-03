@@ -1,0 +1,4107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>NewGen Events &amp; Band Baaja Barat — Visual Wedding Entry Catalogue &amp; Luxury Venues</title>
+  <meta name="description" content="Discover official wedding entry concepts by NewGen Events & Prachi Rana: Sacred Aarti, Royal Welcome, Ganga Moments, Bridal Royalty, Illuminated Entries, and 1,200+ verified venues.">
+
+  <!-- Google Fonts: Inter for modern UI, Playfair Display & Cinzel for royal Indian elegance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* ==========================================================
+       DESIGN SYSTEM & TOKENS
+       Clean, simple, high-end luxury Indian wedding aesthetic
+       ========================================================== */
+    :root {
+      /* Official Brand Theme: Dark Sienna (#38040E) */
+      --sienna-primary: #38040E;
+      --sienna-dark: #250208;
+      --sienna-rich: #4e0714;
+      --sienna-deep: #1d0106;
+      --sienna-light: #f5e9ec;
+      --sienna-soft: #faf2f4;
+      --sienna-border: #ecd2d7;
+
+      /* Color Aliases mapped to Dark Sienna (#38040E) */
+      --pink-primary: #38040E;
+      --pink-dark: #250208;
+      --pink-deep: #1d0106;
+      --pink-light: #f5e9ec;
+      --pink-soft: #faf2f4;
+      
+      /* Royal Gold & Warm Accents */
+      --gold-primary: #c59b27;
+      --gold-light: #dfb74a;
+      --gold-soft: #fcf8ee;
+      --gold-border: rgba(197, 155, 39, 0.25);
+      
+      /* Pure Neutrals */
+      --bg-body: #fcfbf9;
+      --bg-white: #ffffff;
+      --bg-card: #ffffff;
+      --bg-subtle: #f8f6f2;
+      --text-dark: #1e242b;
+      --text-body: #4b5563;
+      --text-muted: #6b7280;
+      --border-light: #ede8e3;
+      --border-subtle: #f3f0ec;
+      
+      /* Typography */
+      --font-heading: 'Playfair Display', Georgia, serif;
+      --font-royal: 'Cinzel', serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      
+      /* Shadows & Radius */
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --radius-pill: 9999px;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.12);
+      --shadow-mega: 0 24px 50px -10px rgba(0, 0, 0, 0.18);
+      
+      --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 130px;
+    }
+
+    body {
+      background-color: var(--bg-body);
+      color: var(--text-body);
+      font-family: var(--font-sans);
+      font-size: 15px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    img, video {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Headings */
+    h1, h2, h3, h4, .font-heading {
+      font-family: var(--font-heading);
+      color: var(--text-dark);
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .font-royal {
+      font-family: var(--font-royal);
+    }
+
+    /* WWS Badge: Verified / Premium Marker */
+    .wws-badge {
+      display: inline-block;
+      background: #e53935;
+      color: #ffffff;
+      font-size: 9px;
+      font-weight: 700;
+      padding: 1px 5px;
+      border-radius: 3px;
+      letter-spacing: 0.5px;
+      vertical-align: super;
+      margin-left: 3px;
+      line-height: 1.2;
+      box-shadow: 0 1px 3px rgba(229, 57, 53, 0.3);
+    }
+
+    .price-badge-green {
+      display: inline-block;
+      background: #059669;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+      letter-spacing: 0.5px;
+    }
+
+    /* ==========================================================
+       1. HEADER (TOP BAR)
+       ========================================================== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #ffffff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Top Strip (Black/Dark Slate) */
+    .top-bar {
+      background: #111418;
+      color: #e5e7eb;
+      font-size: 12px;
+      padding: 8px 0;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .top-bar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .top-bar-tagline {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-size: 11px;
+      color: #f3f4f6;
+    }
+
+    .top-bar-tagline i {
+      color: #ffb300;
+      font-size: 11px;
+    }
+
+    .top-bar-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .top-bar-phone {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #fff;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    .top-bar-phone:hover {
+      color: var(--pink-primary);
+    }
+
+    .top-bar-phone i {
+      color: var(--pink-primary);
+      font-size: 12px;
+    }
+
+    .top-bar-divider {
+      color: #4b5563;
+      font-weight: 300;
+    }
+
+    .top-bar-link {
+      color: #d1d5db;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 11.5px;
+      letter-spacing: 0.8px;
+    }
+
+    .top-bar-link:hover {
+      color: #fff;
+    }
+
+    /* Logo & Auth Bar */
+    .brand-header-bar {
+      background: #ffffff;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .brand-header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+    }
+
+    .logo-symbol {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--pink-primary), var(--pink-deep));
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-royal);
+      font-weight: 800;
+      font-size: 17px;
+      box-shadow: 0 4px 12px rgba(56, 4, 14, 0.35);
+      border: 2px solid #fff;
+    }
+
+    .logo-text-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-title {
+      font-family: var(--font-heading);
+      font-size: 22px;
+      font-weight: 800;
+      color: #1a1a1a;
+      letter-spacing: -0.2px;
+      line-height: 1.1;
+    }
+
+    .logo-title span {
+      color: var(--pink-primary);
+    }
+
+    .logo-subtitle {
+      font-size: 10px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #64748b;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    /* Header Search Pill (Desktop) */
+    .header-quick-search {
+      display: flex;
+      align-items: center;
+      background: #f8fafc;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-pill);
+      padding: 6px 16px;
+      gap: 10px;
+      max-width: 380px;
+      width: 100%;
+    }
+
+    .header-quick-search i {
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    .header-quick-search input {
+      border: none;
+      background: transparent;
+      outline: none;
+      font-size: 13px;
+      color: var(--text-dark);
+      width: 100%;
+      font-family: var(--font-sans);
+    }
+
+    .header-quick-search select {
+      border: none;
+      background: transparent;
+      outline: none;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--pink-primary);
+      cursor: pointer;
+      padding-right: 4px;
+    }
+
+    /* Header Right Actions */
+    .header-auth-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 9px 22px;
+      font-size: 12.5px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      border-radius: var(--radius-pill);
+      cursor: pointer;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+
+    .btn-pill-outline {
+      border: 1.5px solid var(--pink-primary);
+      color: var(--pink-primary);
+      background: transparent;
+    }
+
+    .btn-pill-outline:hover {
+      background: var(--pink-light);
+      color: var(--pink-dark);
+      border-color: var(--pink-dark);
+    }
+
+    .btn-pill-solid {
+      background: var(--pink-primary);
+      color: #ffffff;
+      border: 1.5px solid var(--pink-primary);
+      box-shadow: 0 4px 12px rgba(56, 4, 14, 0.25);
+    }
+
+    .btn-pill-solid:hover {
+      background: var(--pink-dark);
+      border-color: var(--pink-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(56, 4, 14, 0.35);
+    }
+
+    .mobile-nav-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--border-light);
+      padding: 8px 12px;
+      border-radius: var(--radius-sm);
+      color: var(--text-dark);
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    /* ==========================================================
+       2. MAIN NAVIGATION (SIGNATURE PINK BAR, 8 ITEMS)
+       ========================================================== */
+    .main-nav-bar {
+      background: var(--pink-primary);
+      position: relative;
+      border-bottom: 2px solid var(--pink-dark);
+    }
+
+    .main-nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-list {
+      display: flex;
+      align-items: stretch;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-item {
+      position: relative;
+    }
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 13px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+      color: #ffffff;
+      text-transform: uppercase;
+      white-space: nowrap;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .nav-link:hover,
+    .nav-item:hover > .nav-link,
+    .nav-item.active > .nav-link {
+      background: var(--pink-dark);
+      color: #fff;
+    }
+
+    .nav-link i.caret-icon {
+      font-size: 10px;
+      opacity: 0.85;
+      transition: transform 0.2s ease;
+    }
+
+    .nav-item:hover .nav-link i.caret-icon {
+      transform: rotate(180deg);
+    }
+
+    /* ==========================================================
+       MEGA MENU BASE STYLING
+       ========================================================== */
+    .mega-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #ffffff;
+      box-shadow: var(--shadow-mega);
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+      border-bottom: 3px solid var(--pink-primary);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transform: translateY(8px);
+      transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+      z-index: 1050;
+      max-height: calc(85vh);
+      overflow-y: auto;
+    }
+
+    .main-nav-bar .mega-menu {
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      margin-left: calc(-50vw + 50%);
+    }
+
+    .nav-item:hover > .mega-menu {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    .mega-menu-content {
+      padding: 36px 0 40px;
+    }
+
+    .mega-col-heading {
+      font-size: 13.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #111827;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--pink-light);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .mega-col-heading i {
+      color: var(--pink-primary);
+      font-size: 13px;
+    }
+
+    .mega-link-list {
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .mega-link {
+      display: inline-flex;
+      align-items: center;
+      font-size: 13px;
+      color: #374151;
+      line-height: 1.4;
+      transition: var(--transition);
+    }
+
+    .mega-link::before {
+      content: "▸";
+      color: var(--pink-primary);
+      margin-right: 7px;
+      font-size: 11px;
+      transition: transform 0.2s ease;
+    }
+
+    .mega-link:hover {
+      color: var(--pink-primary);
+      transform: translateX(3px);
+    }
+
+    .view-more-red {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      color: #dc2626;
+      font-size: 12.5px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: var(--transition);
+    }
+
+    .view-more-red:hover {
+      color: #b91c1c;
+      text-decoration: underline;
+    }
+
+    .read-more-pink-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background: var(--pink-light);
+      color: var(--pink-dark);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 6px 16px;
+      border-radius: var(--radius-pill);
+      margin-top: 14px;
+      transition: var(--transition);
+      cursor: pointer;
+      border: 1px solid rgba(56, 4, 14, 0.2);
+    }
+
+    .read-more-pink-pill:hover {
+      background: var(--pink-primary);
+      color: #fff;
+    }
+
+    /* Mega Grids */
+    .venue-mega-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.35fr 1fr;
+      gap: 40px;
+    }
+
+    .city-multi-col {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px 16px;
+    }
+
+    .country-highlight-card {
+      background: linear-gradient(135deg, #fff5f8, #fdf4ff);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .country-highlight-card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: var(--radius-sm);
+      margin-bottom: 12px;
+    }
+
+    .vendor-mega-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px 30px;
+    }
+
+    .vendor-group-card {
+      background: #fafafa;
+      border: 1px solid #f0f0f0;
+      padding: 16px;
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+    }
+
+    .vendor-group-card:hover {
+      background: #ffffff;
+      border-color: var(--pink-light);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .culture-mega-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr 1.6fr;
+      gap: 36px;
+    }
+
+    .culture-cities-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 7px 14px;
+      max-height: 260px;
+      overflow-y: auto;
+      padding-right: 8px;
+    }
+
+    .culture-cities-grid::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    .culture-cities-grid::-webkit-scrollbar-thumb {
+      background: #e2e8f0;
+      border-radius: 4px;
+    }
+
+    .simple-dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 250px;
+      background: #ffffff;
+      box-shadow: var(--shadow-lg);
+      border-radius: 0 0 var(--radius-md) var(--radius-md);
+      border-top: 2px solid var(--pink-primary);
+      padding: 12px 0;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(8px);
+      transition: all 0.2s ease;
+      z-index: 1020;
+    }
+
+    .nav-item:hover > .simple-dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .simple-dropdown-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 20px;
+      font-size: 13.5px;
+      color: #374151;
+      font-weight: 500;
+    }
+
+    .simple-dropdown-link i {
+      color: var(--pink-primary);
+      width: 16px;
+      font-size: 13px;
+    }
+
+    .simple-dropdown-link:hover {
+      background: var(--pink-soft);
+      color: var(--pink-primary);
+      padding-left: 24px;
+    }
+
+    /* ==========================================================
+       HERO PORTAL (YOUR STORY. YOUR ENTRY. YOUR MOMENT.)
+       ========================================================== */
+    .hero-portal {
+      position: relative;
+      background: linear-gradient(180deg, #ffffff 0%, #fdfbf7 100%);
+      padding: 50px 0 70px;
+      border-bottom: 1px solid var(--border-light);
+      overflow: hidden;
+    }
+
+    .hero-portal::before {
+      content: "";
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(56, 4, 14, 0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--pink-soft);
+      border: 1px solid var(--pink-light);
+      color: var(--pink-dark);
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 20px;
+    }
+
+    .hero-badge i {
+      color: var(--pink-primary);
+    }
+
+    .hero-title {
+      font-size: clamp(34px, 4.4vw, 56px);
+      line-height: 1.15;
+      margin-bottom: 18px;
+      color: #111827;
+      letter-spacing: -0.5px;
+    }
+
+    .hero-title .highlight-pink {
+      color: var(--pink-primary);
+      font-style: italic;
+    }
+
+    .hero-desc {
+      font-size: 16.5px;
+      color: #4b5563;
+      margin-bottom: 28px;
+      max-width: 580px;
+      line-height: 1.65;
+    }
+
+    .catalogue-metrics-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 28px;
+      padding: 16px 20px;
+      background: #ffffff;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .metric-cell .val {
+      font-family: var(--font-royal);
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--pink-primary);
+    }
+
+    .metric-cell .lbl {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #6b7280;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    .search-widget-card {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-light);
+      margin-bottom: 24px;
+    }
+
+    .search-widget-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #1f2937;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .search-widget-form {
+      display: grid;
+      grid-template-columns: 1.3fr 1.1fr 0.9fr auto;
+      gap: 12px;
+    }
+
+    .form-control-wrap label {
+      display: block;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #6b7280;
+      margin-bottom: 4px;
+      letter-spacing: 0.5px;
+    }
+
+    .select-luxury, .input-luxury {
+      width: 100%;
+      height: 44px;
+      padding: 0 14px;
+      background: #f9fafb;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      font-size: 13.5px;
+      color: #1f2937;
+      font-family: var(--font-sans);
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .select-luxury:focus, .input-luxury:focus {
+      border-color: var(--pink-primary);
+      background: #ffffff;
+      box-shadow: 0 0 0 3px rgba(56, 4, 14, 0.12);
+    }
+
+    .btn-search-hero {
+      height: 44px;
+      margin-top: 19px;
+      background: var(--pink-primary);
+      color: #ffffff;
+      border: none;
+      border-radius: var(--radius-sm);
+      padding: 0 24px;
+      font-weight: 600;
+      font-size: 13.5px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: var(--transition);
+      box-shadow: 0 4px 12px rgba(56, 4, 14, 0.25);
+    }
+
+    .btn-search-hero:hover {
+      background: var(--pink-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(56, 4, 14, 0.35);
+    }
+
+    /* Hero Visual Card */
+    .hero-showcase-card {
+      position: relative;
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      padding: 14px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border-light);
+    }
+
+    .hero-media-wrapper {
+      position: relative;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      aspect-ratio: 4 / 4.8;
+      background: #111;
+    }
+
+    .hero-media-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      transition: transform 0.6s ease;
+    }
+
+    .hero-showcase-card:hover .hero-media-wrapper img {
+      transform: scale(1.03);
+    }
+
+    .hero-flagship-tag {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: rgba(17, 20, 24, 0.85);
+      backdrop-filter: blur(8px);
+      color: #f6e6be;
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      padding: 6px 14px;
+      border-radius: var(--radius-pill);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .hero-profile-footer {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      right: 16px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      border-radius: var(--radius-md);
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .profile-info h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 2px;
+    }
+
+    .profile-info p {
+      font-size: 12px;
+      color: #6b7280;
+      font-weight: 500;
+    }
+
+    .btn-atelier-book {
+      background: var(--pink-primary);
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: var(--radius-pill);
+      font-size: 12px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-atelier-book:hover {
+      background: var(--pink-dark);
+      color: #fff;
+    }
+
+    /* Common Section Utility */
+    section {
+      padding: 80px 0;
+    }
+
+    .section-head {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 50px;
+    }
+
+    .section-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--pink-primary);
+      margin-bottom: 12px;
+    }
+
+    .section-eyebrow::before,
+    .section-eyebrow::after {
+      content: "";
+      width: 20px;
+      height: 1px;
+      background: var(--pink-primary);
+    }
+
+    .section-title {
+      font-size: clamp(28px, 3.8vw, 42px);
+      margin-bottom: 14px;
+      color: #111827;
+    }
+
+    .section-desc {
+      font-size: 15.5px;
+      color: #6b7280;
+      line-height: 1.7;
+    }
+
+    /* ==========================================================
+       THE 4-STEP METHODOLOGY (YOUR ENTRY. YOUR WAY.)
+       From Page 14 of the Visual Catalogue
+       ========================================================== */
+    .section-process {
+      background: #ffffff;
+      padding: 60px 0;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .process-timeline-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      position: relative;
+    }
+
+    .process-step-card {
+      background: #fafafa;
+      border: 1px solid #f0f0f0;
+      border-radius: var(--radius-md);
+      padding: 28px 22px;
+      text-align: center;
+      position: relative;
+      transition: var(--transition);
+    }
+
+    .process-step-card:hover {
+      background: #ffffff;
+      border-color: var(--pink-light);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-4px);
+    }
+
+    .step-badge {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--pink-primary);
+      color: #ffffff;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+      font-size: 15px;
+      box-shadow: 0 4px 10px rgba(56, 4, 14, 0.3);
+    }
+
+    .process-step-card h4 {
+      font-size: 18px;
+      color: #111827;
+      margin-bottom: 6px;
+    }
+
+    .process-step-card .subtitle {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--pink-primary);
+      margin-bottom: 10px;
+    }
+
+    .process-step-card p {
+      font-size: 13px;
+      color: #6b7280;
+      line-height: 1.6;
+    }
+
+    /* ==========================================================
+       THE OFFICIAL CATALOGUE CONCEPT COLLECTION (PAGES 3 - 13)
+       ========================================================== */
+    .section-catalogue-collection {
+      background: var(--bg-body);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .catalogue-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .catalogue-card {
+      background: #ffffff;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .catalogue-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+      border-color: #ecd2d7;
+    }
+
+    .catalogue-media-box {
+      position: relative;
+      aspect-ratio: 16 / 11;
+      overflow: hidden;
+      background: #111;
+      cursor: pointer;
+    }
+
+    .catalogue-media-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .catalogue-card:hover .catalogue-media-box img {
+      transform: scale(1.06);
+    }
+
+    .catalogue-tag-pill {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(17, 20, 24, 0.85);
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+    }
+
+    .catalogue-price-badge {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: #059669;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      box-shadow: 0 2px 6px rgba(5, 150, 105, 0.3);
+    }
+
+    .catalogue-content {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .catalogue-tagline {
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--pink-primary);
+      margin-bottom: 6px;
+    }
+
+    .catalogue-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 10px;
+    }
+
+    .catalogue-desc {
+      font-size: 13.5px;
+      color: #4b5563;
+      margin-bottom: 18px;
+      line-height: 1.6;
+    }
+
+    .catalogue-bullets {
+      margin-bottom: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .catalogue-bullets li {
+      font-size: 12.5px;
+      color: #6b7280;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .catalogue-bullets li i {
+      color: var(--pink-primary);
+      font-size: 11px;
+    }
+
+    .catalogue-btn-row {
+      margin-top: auto;
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn-card-wa {
+      flex: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 14px;
+      background: var(--pink-soft);
+      color: var(--pink-dark);
+      border: 1px solid var(--pink-light);
+      border-radius: var(--radius-sm);
+      font-size: 12.5px;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+
+    .btn-card-wa:hover {
+      background: var(--pink-primary);
+      color: #ffffff;
+      border-color: var(--pink-primary);
+    }
+
+    /* ==========================================================
+       CORE LEADERSHIP & CHOREOGRAPHY POWERHOUSE (PAGES 15 - 16)
+       ========================================================== */
+    .section-team {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .founder-quote-banner {
+      background: linear-gradient(135deg, #faf2f4 0%, #f5e9ec 100%);
+      border: 1px solid #ecd2d7;
+      border-radius: var(--radius-lg);
+      padding: 36px 40px;
+      margin-bottom: 50px;
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .founder-avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid #ffffff;
+      box-shadow: var(--shadow-md);
+    }
+
+    .founder-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .founder-quote-text blockquote {
+      font-family: var(--font-heading);
+      font-size: 19px;
+      font-style: italic;
+      color: #111827;
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .founder-quote-text .author-meta {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: var(--pink-dark);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .team-members-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    .team-member-card {
+      background: #fafafa;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .team-member-card:hover {
+      background: #ffffff;
+      box-shadow: var(--shadow-md);
+      transform: translateY(-5px);
+      border-color: #ecd2d7;
+    }
+
+    .team-photo-wrap {
+      aspect-ratio: 1;
+      overflow: hidden;
+      background: #222;
+    }
+
+    .team-photo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      transition: transform 0.5s ease;
+    }
+
+    .team-member-card:hover .team-photo-wrap img {
+      transform: scale(1.05);
+    }
+
+    .team-body {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .team-role-tag {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--pink-primary);
+      margin-bottom: 6px;
+    }
+
+    .team-name {
+      font-size: 18px;
+      color: #111827;
+      margin-bottom: 10px;
+    }
+
+    .team-bio {
+      font-size: 13px;
+      color: #4b5563;
+      line-height: 1.65;
+      margin-bottom: 16px;
+    }
+
+    .celebrity-tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: auto;
+      padding-top: 14px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .celeb-chip {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      padding: 3px 8px;
+      border-radius: var(--radius-sm);
+      font-size: 11px;
+      color: #6b7280;
+      font-weight: 600;
+    }
+
+    /* Video Theater Section */
+    .section-video {
+      background: #111418;
+      color: #ffffff;
+      position: relative;
+    }
+
+    .section-video .section-eyebrow {
+      color: #ecd2d7;
+    }
+
+    .section-video .section-title {
+      color: #ffffff;
+    }
+
+    .section-video .section-desc {
+      color: #9ca3af;
+    }
+
+    .video-theater-frame {
+      max-width: 1000px;
+      margin: 0 auto;
+      border-radius: var(--radius-lg);
+      background: #1e242b;
+      padding: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+    }
+
+    .video-viewport {
+      aspect-ratio: 16 / 9;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: #000;
+    }
+
+    .video-viewport video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .video-bottom-strip {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding: 18px 12px 6px;
+    }
+
+    .video-caption h4 {
+      font-size: 17px;
+      color: #ffffff;
+      margin-bottom: 3px;
+    }
+
+    .video-caption p {
+      font-size: 13px;
+      color: #9ca3af;
+    }
+
+    /* Directory Marketplace */
+    .section-directory {
+      background: var(--bg-body);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .directory-filter-bar {
+      background: #ffffff;
+      border-radius: var(--radius-md);
+      padding: 18px 24px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-light);
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .filter-tags-scroll {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .filter-chip {
+      padding: 7px 16px;
+      border-radius: var(--radius-pill);
+      font-size: 12.5px;
+      font-weight: 600;
+      background: #f3f4f6;
+      color: #4b5563;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .filter-chip:hover,
+    .filter-chip.active {
+      background: var(--pink-primary);
+      color: #ffffff;
+      border-color: var(--pink-primary);
+    }
+
+    .current-url-breadcrumb {
+      font-size: 12px;
+      color: #6b7280;
+      background: #f8fafc;
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      border: 1px solid #e2e8f0;
+      font-family: monospace;
+    }
+
+    .directory-listings-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .listing-card {
+      background: #ffffff;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .listing-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: #ecd2d7;
+    }
+
+    .listing-media-box {
+      position: relative;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      background: #222;
+    }
+
+    .listing-media-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .listing-card:hover .listing-media-box img {
+      transform: scale(1.05);
+    }
+
+    .listing-badge-tag {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(4px);
+      color: var(--pink-dark);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+    }
+
+    .listing-rating-pill {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      background: #111827;
+      color: #fbbf24;
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: var(--radius-pill);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .listing-rating-pill span {
+      color: #fff;
+      font-weight: 400;
+      font-size: 10px;
+    }
+
+    .listing-content {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .listing-location {
+      font-size: 12px;
+      color: #6b7280;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .listing-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: #111827;
+      margin-bottom: 8px;
+    }
+
+    .listing-price-strip {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: auto;
+      padding-top: 16px;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .price-tag .label {
+      font-size: 10.5px;
+      text-transform: uppercase;
+      color: #9ca3af;
+      font-weight: 600;
+    }
+
+    .price-tag .val {
+      font-size: 15px;
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .listing-actions-row {
+      display: flex;
+      gap: 8px;
+    }
+
+    .btn-action-wa {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #25d366;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      transition: var(--transition);
+    }
+
+    .btn-action-wa:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    }
+
+    .btn-action-call {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #f3f4f6;
+      color: #374151;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      transition: var(--transition);
+    }
+
+    .btn-action-call:hover {
+      background: var(--pink-primary);
+      color: #fff;
+    }
+
+    /* Budget Quote Calculator */
+    .section-quote {
+      background: #ffffff;
+      border-top: 1px solid var(--border-light);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .quote-split-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    .quote-info-col h2 {
+      font-size: clamp(28px, 3.5vw, 40px);
+      margin-bottom: 16px;
+      color: #111827;
+    }
+
+    .quote-info-col p {
+      font-size: 15px;
+      color: #4b5563;
+      margin-bottom: 24px;
+      line-height: 1.7;
+    }
+
+    .quote-highlight-plaque {
+      background: var(--pink-soft);
+      border: 1px solid var(--pink-light);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+
+    .quote-highlight-plaque .label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--pink-dark);
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .quote-highlight-plaque .amount {
+      font-family: var(--font-heading);
+      font-size: 32px;
+      font-weight: 700;
+      color: #111827;
+    }
+
+    .quote-form-card {
+      background: #ffffff;
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border-light);
+    }
+
+    .quote-form-card h3 {
+      font-size: 22px;
+      margin-bottom: 8px;
+      color: #111827;
+    }
+
+    .quote-form-card p {
+      font-size: 13.5px;
+      color: #6b7280;
+      margin-bottom: 24px;
+    }
+
+    .form-group-field {
+      margin-bottom: 18px;
+    }
+
+    .form-group-field label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #374151;
+      margin-bottom: 6px;
+      letter-spacing: 0.5px;
+    }
+
+    .input-field-custom {
+      width: 100%;
+      height: 46px;
+      padding: 0 16px;
+      background: #f9fafb;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      font-size: 14px;
+      color: #1f2937;
+      font-family: var(--font-sans);
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .input-field-custom:focus {
+      border-color: var(--pink-primary);
+      background: #ffffff;
+      box-shadow: 0 0 0 3px rgba(56, 4, 14, 0.12);
+    }
+
+    .btn-submit-quote {
+      width: 100%;
+      height: 48px;
+      background: var(--pink-primary);
+      color: #ffffff;
+      border: none;
+      border-radius: var(--radius-sm);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: var(--transition);
+      margin-top: 8px;
+      box-shadow: 0 4px 14px rgba(56, 4, 14, 0.3);
+    }
+
+    .btn-submit-quote:hover {
+      background: var(--pink-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(56, 4, 14, 0.4);
+    }
+
+    /* Photo Gallery */
+    .section-gallery {
+      background: var(--bg-body);
+    }
+
+    .gallery-masonry-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .gallery-tile {
+      position: relative;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      aspect-ratio: 1;
+      background: #111;
+      cursor: pointer;
+      border: 1px solid var(--border-light);
+    }
+
+    .gallery-tile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-tile:hover img {
+      transform: scale(1.08);
+    }
+
+    .gallery-tile-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.8) 100%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 16px;
+      color: #fff;
+    }
+
+    .gallery-tile:hover .gallery-tile-overlay {
+      opacity: 1;
+    }
+
+    .gallery-tile-title {
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .gallery-tile-cat {
+      font-size: 11px;
+      color: #ecd2d7;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Reviews */
+    .section-reviews {
+      background: #ffffff;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .review-bubble {
+      background: #fafaf9;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 30px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+    }
+
+    .review-bubble:hover {
+      background: #ffffff;
+      border-color: #ecd2d7;
+      box-shadow: var(--shadow-md);
+    }
+
+    .review-stars {
+      color: #f59e0b;
+      font-size: 14px;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+    }
+
+    .review-text {
+      font-size: 14.5px;
+      color: #374151;
+      line-height: 1.65;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    .review-author-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-top: 1px solid var(--border-light);
+      padding-top: 14px;
+    }
+
+    .author-initials {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--pink-soft);
+      color: var(--pink-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .author-meta h5 {
+      font-size: 14px;
+      color: #111827;
+      margin-bottom: 2px;
+    }
+
+    .author-meta span {
+      font-size: 11.5px;
+      color: #6b7280;
+    }
+
+    /* FAQ */
+    .section-faq {
+      background: var(--bg-body);
+      border-top: 1px solid var(--border-light);
+    }
+
+    .faq-wrapper {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: #ffffff;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      margin-bottom: 14px;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .faq-item.active {
+      border-color: var(--pink-primary);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .faq-question {
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      font-size: 15.5px;
+      font-weight: 600;
+      color: #111827;
+    }
+
+    .faq-question i {
+      color: var(--pink-primary);
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.active .faq-question i {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      padding: 0 24px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+      color: #4b5563;
+      font-size: 14.5px;
+      line-height: 1.7;
+    }
+
+    .faq-item.active .faq-answer {
+      padding: 0 24px 22px 24px;
+      max-height: 250px;
+    }
+
+    /* Footer */
+    footer {
+      background: #111418;
+      color: #9ca3af;
+      padding: 70px 0 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+
+    .footer-brand h4 {
+      color: #ffffff;
+      font-size: 20px;
+      margin-bottom: 14px;
+    }
+
+    .footer-brand p {
+      font-size: 13.5px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      color: #9ca3af;
+    }
+
+    .footer-social-strip {
+      display: flex;
+      gap: 10px;
+    }
+
+    .footer-social-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      color: #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      transition: var(--transition);
+    }
+
+    .footer-social-btn:hover {
+      background: var(--pink-primary);
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    .footer-col h5 {
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 18px;
+    }
+
+    .footer-links-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links-list a {
+      font-size: 13px;
+      color: #9ca3af;
+      transition: var(--transition);
+    }
+
+    .footer-links-list a:hover {
+      color: #ffffff;
+      padding-left: 4px;
+    }
+
+    .footer-contact-info li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 12px;
+      font-size: 13px;
+    }
+
+    .footer-contact-info li i {
+      color: var(--pink-primary);
+      margin-top: 3px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 12.5px;
+    }
+
+    /* Modals */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(8px);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+    }
+
+    .auth-modal-card {
+      background: #ffffff;
+      width: 100%;
+      max-width: 440px;
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      position: relative;
+      box-shadow: var(--shadow-mega);
+      animation: modalFadeIn 0.25s ease;
+    }
+
+    @keyframes modalFadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .modal-close-btn {
+      position: absolute;
+      top: 18px;
+      right: 20px;
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: #9ca3af;
+      cursor: pointer;
+    }
+
+    .modal-close-btn:hover {
+      color: #111827;
+    }
+
+    .auth-tabs {
+      display: flex;
+      border-bottom: 2px solid #f3f4f6;
+      margin-bottom: 24px;
+    }
+
+    .auth-tab-btn {
+      flex: 1;
+      padding: 10px 0;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 600;
+      color: #6b7280;
+      background: none;
+      border: none;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -2px;
+    }
+
+    .auth-tab-btn.active {
+      color: var(--pink-primary);
+      border-bottom-color: var(--pink-primary);
+    }
+
+    .auth-form {
+      display: none;
+    }
+
+    .auth-form.active {
+      display: block;
+    }
+
+    .lightbox-viewer {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.92);
+      z-index: 2100;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .lightbox-viewer.active {
+      display: flex;
+    }
+
+    .lightbox-viewer img {
+      max-width: 90vw;
+      max-height: 85vh;
+      border-radius: var(--radius-sm);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.8);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .lightbox-close-icon {
+      position: absolute;
+      top: 24px;
+      right: 28px;
+      color: #fff;
+      font-size: 32px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 999;
+      background: #25d366;
+      color: #ffffff;
+      padding: 12px 20px;
+      border-radius: var(--radius-pill);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 13.5px;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
+      transition: var(--transition);
+    }
+
+    .floating-whatsapp:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+      color: #fff;
+    }
+
+    .floating-whatsapp i {
+      font-size: 22px;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .venue-mega-grid, .culture-mega-grid {
+        grid-template-columns: 1fr;
+      }
+      .vendor-mega-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .catalogue-grid, .directory-listings-grid, .team-members-grid, .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .process-timeline-grid, .gallery-masonry-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .quote-split-grid, .hero-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .founder-quote-banner {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .founder-avatar {
+        margin: 0 auto;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .top-bar-tagline {
+        display: none;
+      }
+      .top-bar-inner {
+        justify-content: flex-end;
+      }
+      .header-quick-search {
+        display: none;
+      }
+      .mobile-nav-toggle {
+        display: block;
+      }
+
+      .main-nav-bar {
+        position: relative;
+      }
+
+      .nav-list {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 320px;
+        height: 100vh;
+        background: #ffffff;
+        box-shadow: var(--shadow-mega);
+        z-index: 2500;
+        overflow-y: auto;
+        flex-direction: column;
+        padding: 60px 0 30px 0;
+      }
+
+      .nav-list.mobile-active {
+        display: flex;
+      }
+
+      .mobile-drawer-close {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        background: none;
+        border: none;
+        font-size: 22px;
+        color: #374151;
+        cursor: pointer;
+        display: block;
+      }
+
+      .nav-item {
+        border-bottom: 1px solid #f3f4f6;
+        width: 100%;
+      }
+
+      .nav-link {
+        color: #111827;
+        padding: 16px 20px;
+        justify-content: space-between;
+        font-size: 13.5px;
+      }
+
+      .nav-link:hover, .nav-item:hover > .nav-link {
+        background: var(--pink-soft);
+        color: var(--pink-primary);
+      }
+
+      /* Mobile Accordion */
+      .mega-menu, .simple-dropdown {
+        position: static !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+        box-shadow: none;
+        border: none;
+        border-top: 1px dashed var(--border-light);
+        background: #fbfbfb;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+        transition: max-height 0.35s ease;
+        padding: 0 !important;
+        display: block;
+      }
+
+      .nav-item.mobile-open > .mega-menu,
+      .nav-item.mobile-open > .simple-dropdown {
+        max-height: 1200px;
+        padding: 16px 20px !important;
+      }
+
+      .nav-item.mobile-open .caret-icon {
+        transform: rotate(180deg);
+      }
+
+      .vendor-mega-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .city-multi-col, .culture-cities-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .top-bar-right {
+        font-size: 11px;
+        gap: 10px;
+      }
+      .brand-header-bar {
+        padding: 10px 0;
+      }
+      .logo-symbol {
+        width: 38px;
+        height: 38px;
+        font-size: 14px;
+      }
+      .logo-title {
+        font-size: 18px;
+      }
+      .btn-pill {
+        padding: 7px 14px;
+        font-size: 11.5px;
+      }
+      .search-widget-form {
+        grid-template-columns: 1fr;
+      }
+      .btn-search-hero {
+        margin-top: 6px;
+      }
+      .catalogue-grid, .directory-listings-grid, .team-members-grid, .process-timeline-grid, .reviews-grid, .gallery-masonry-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .floating-whatsapp span {
+        display: none;
+      }
+      .floating-whatsapp {
+        padding: 14px;
+        border-radius: 50%;
+        bottom: 20px;
+        right: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================
+       1. HEADER (TOP BAR)
+       Tagline: BETTER WITH OTHERS, BEST WITH US
+       Phone: +91 8449395900 + ABOUT US link
+       Below: Logo | Login & Sign Up outlined pill buttons
+       ========================================================== -->
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="container top-bar-inner">
+        <div class="top-bar-tagline">
+          <i class="fa-solid fa-sparkles"></i>
+          <span>BETTER WITH OTHERS, BEST WITH US</span>
+        </div>
+        <div class="top-bar-right">
+          <a href="tel:+918449395900" class="top-bar-phone">
+            <i class="fa-solid fa-phone"></i> +91 8449395900
+          </a>
+          <span class="top-bar-divider">|</span>
+          <a href="#about-atelier" class="top-bar-link">ABOUT US</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-header-bar">
+      <div class="container brand-header-inner">
+        <a href="#" class="logo-container">
+          <div class="logo-symbol">NG</div>
+          <div class="logo-text-group">
+            <span class="logo-title">NEWGEN <span>EVENTS</span></span>
+            <span class="logo-subtitle">Visual Wedding Entry Catalogue &bull; Prachi Rana</span>
+          </div>
+        </a>
+
+        <!-- Quick Search Pill Input -->
+        <div class="header-quick-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search aarti, royal welcome, bridal entry..." id="headerSearchInput">
+          <select id="headerCitySelect" onchange="quickCityFilter(this.value)">
+            <option value="all">Pan-India</option>
+            <option value="delhi-ncr">Delhi NCR</option>
+            <option value="jaipur">Jaipur</option>
+            <option value="udaipur">Udaipur</option>
+            <option value="goa">Goa</option>
+            <option value="mumbai">Mumbai</option>
+          </select>
+        </div>
+
+        <!-- Auth Actions: Outlined Pill Buttons -->
+        <div class="header-auth-actions">
+          <button class="btn-pill btn-pill-outline" onclick="openAuthModal('login')">
+            <i class="fa-regular fa-user"></i> Login
+          </button>
+          <button class="btn-pill btn-pill-solid" onclick="openAuthModal('signup')">
+            Sign Up
+          </button>
+          <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================
+         2. MAIN NAVIGATION (SIGNATURE PINK BAR, 8 ITEMS)
+         Replicating BandBaajaBarat Mega-Menu Architecture
+         ========================================================== -->
+    <nav class="main-nav-bar" id="mainNavBar">
+      <div class="container main-nav-inner">
+        <ul class="nav-list" id="navList">
+          <button class="mobile-drawer-close" id="mobileDrawerClose" style="display:none;" aria-label="Close menu">&times;</button>
+
+          <!-- 1. WEDDING VENUE (mega menu - 3 columns) -->
+          <li class="nav-item has-dropdown">
+            <a href="#directory" class="nav-link" onclick="handleMobileDropdown(event, this)">
+              WEDDING VENUE <i class="fa-solid fa-chevron-down caret-icon"></i>
+            </a>
+            <div class="mega-menu">
+              <div class="container mega-menu-content">
+                <div class="venue-mega-grid">
+                  <!-- Column A — Venue Type -->
+                  <div>
+                    <h4 class="mega-col-heading"><i class="fa-solid fa-hotel"></i> Venue Type</h4>
+                    <ul class="mega-link-list">
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('venue', 'banquet-halls')">Banquet Halls</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('venue', 'lawn-farmhouses')">Lawn &amp; Farmhouses</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('venue', 'small-function-halls')">Small Function Halls</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('venue', 'motels-resorts')">Motels &amp; Resorts</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('venue', 'beachside-venue')">Beachside Wedding Venue</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('venue', 'desert-camp')">Desert Camp</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('venue', '3-star-hotels')">3 Star Hotels</a></li>
+                    </ul>
+                    <span class="view-more-red" onclick="expandVenueTypes(this)">View More ▼</span>
+                    <ul class="mega-link-list hidden-venue-types" style="display: none; margin-top: 8px;">
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('venue', 'palace-heritage')">Palace &amp; Heritage Havelis</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('venue', '5-star-luxury')">4 &amp; 5 Star Luxury Ballrooms</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('venue', 'poolside-venue')">Poolside Sunset Terraces</a></li>
+                    </ul>
+                  </div>
+
+                  <!-- Column B — By City -->
+                  <div>
+                    <h4 class="mega-col-heading"><i class="fa-solid fa-location-dot"></i> By City</h4>
+                    <div class="city-multi-col">
+                      <ul class="mega-link-list">
+                        <li><a href="#directory" class="mega-link" onclick="filterByCity('siliguri')">Siliguri</a></li>
+                        <li><a href="#directory" class="mega-link" onclick="filterByCity('orchha')">Orchha</a></li>
+                        <li><a href="#directory" class="mega-link" onclick="filterByCity('guwahati')">Guwahati</a></li>
+                        <li><a href="#directory" class="mega-link" onclick="filterByCity('jabalpur')">Jabalpur</a></li>
+                        <li><a href="#directory" class="mega-link" onclick="filterByCity('bhopal')">Bhopal</a></li>
+                        <li><a href="#directory" class="mega-link" onclick="filterByCity('gwalior')">Gwalior</a></li>
+                        <li><a href="#directory" class="mega-link" onclick="filterByCity('indore')">Indore</a></li>
+                        <li><a href="#directory" class="mega-link" onclick="filterByCity('bhubaneswar')">Bhubaneswar</a></li>
+                      </ul>
+                      <ul class="mega-link-list">
+                        <li><a href="#directory" class="mega-link" onclick="filterByCity('tonk')">Tonk</a></li>
+                        <li><a href="#directory" class="mega-link" onclick="filterByCity('delhi-ncr')">Delhi Ncr</a></li>
+                        <li><a href="#directory" class="mega-link" onclick="filterByCity('mumbai')">Mumbai</a></li>
+                        <li><a href="#directory" class="mega-link" onclick="filterByCity('bengaluru')">Bengaluru</a></li>
+                        <li><a href="#directory" class="mega-link" onclick="filterByCity('mangalore')">Mangalore</a></li>
+                        <li><a href="#directory" class="mega-link" onclick="filterByCity('chennai')">Chennai</a></li>
+                        <li><a href="#directory" class="mega-link" onclick="filterByCity('hyderabad')">Hyderabad</a></li>
+                        <li><a href="#directory" class="mega-link" onclick="filterByCity('ahmedabad')">Ahmedabad</a></li>
+                      </ul>
+                      <ul class="mega-link-list">
+                        <li><a href="#directory" class="mega-link" onclick="filterByCity('goa')">Goa</a></li>
+                        <li><a href="#directory" class="mega-link" onclick="filterByCity('jaipur')">Jaipur</a></li>
+                        <li><a href="#directory" class="mega-link" onclick="filterByCity('udaipur')">Udaipur</a></li>
+                        <li><a href="#directory" class="mega-link" onclick="filterByCity('jodhpur')">Jodhpur</a></li>
+                        <li><a href="#directory" class="mega-link" onclick="filterByCity('neemrana')">Neemrana</a></li>
+                        <li><a href="#directory" class="mega-link" onclick="filterByCity('lucknow')">Lucknow</a></li>
+                        <li><a href="#directory" class="mega-link" onclick="filterByCity('jim-corbett')">Jim Corbett</a></li>
+                      </ul>
+                    </div>
+                    <a href="#directory" class="read-more-pink-pill" onclick="filterByCity('all')">Read More (Full City List) ➔</a>
+                  </div>
+
+                  <!-- Column C — By Country -->
+                  <div>
+                    <h4 class="mega-col-heading"><i class="fa-solid fa-earth-asia"></i> By Country</h4>
+                    <div class="country-highlight-card">
+                      <img src="catalogue_assets/royal_welcome_entry.png" alt="India Luxury Palace Destination">
+                      <h5 style="font-size: 16px; font-weight: 700; color: #111; margin-bottom: 4px;">India</h5>
+                      <p style="font-size: 12px; color: #6b7280; margin-bottom: 12px;">Top Destination: Rajasthan Palaces, Goa Coastlines, Delhi NCR Royal Banquets</p>
+                      <a href="#directory" class="read-more-pink-pill" style="display:inline-block; margin-top:0;">Explore Pan-India Venues</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- 2. WEDDING VENDOR (mega menu - 4 columns x 2 rows = 8 groups) -->
+          <li class="nav-item has-dropdown">
+            <a href="#directory" class="nav-link" onclick="handleMobileDropdown(event, this)">
+              WEDDING VENDOR <i class="fa-solid fa-chevron-down caret-icon"></i>
+            </a>
+            <div class="mega-menu">
+              <div class="container mega-menu-content">
+                <div class="vendor-mega-grid">
+                  <!-- Group 1: FOOD & BEVERAGE -->
+                  <div class="vendor-group-card">
+                    <h4 class="mega-col-heading"><i class="fa-solid fa-utensils"></i> FOOD &amp; BEVERAGE</h4>
+                    <ul class="mega-link-list">
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'wedding-caterer')">Wedding Caterer</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'home-catering')">Home Catering</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'bar-tender')">Bar Tender</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'chaat-food-counter')">Chaat &amp; Food Counter</a></li>
+                    </ul>
+                  </div>
+
+                  <!-- Group 2: MAKEUP ARTIST -->
+                  <div class="vendor-group-card">
+                    <h4 class="mega-col-heading"><i class="fa-solid fa-wand-magic-sparkles"></i> MAKEUP ARTIST</h4>
+                    <ul class="mega-link-list">
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'bridal-makeup')">Bridal Makeup <sup class="wws-badge">WWS</sup></a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'hd-airbrush-makeup')">Airbrush &amp; HD Makeup <sup class="wws-badge">WWS</sup></a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'family-party-makeup')">Family &amp; Party Makeup</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'groom-styling')">Groom Styling</a></li>
+                    </ul>
+                  </div>
+
+                  <!-- Group 3: WEDDING DECORATOR -->
+                  <div class="vendor-group-card">
+                    <h4 class="mega-col-heading"><i class="fa-solid fa-gem"></i> WEDDING DECORATOR</h4>
+                    <ul class="mega-link-list">
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'wedding-decorators')">Wedding Decorators <sup class="wws-badge">WWS</sup></a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'florists')">Florists</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'balloon-decorator')">Balloon Decorator <sup class="wws-badge">WWS</sup></a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'tent-house')">Tent House</a></li>
+                    </ul>
+                  </div>
+
+                  <!-- Group 4: PLANNING MANAGEMENT -->
+                  <div class="vendor-group-card">
+                    <h4 class="mega-col-heading"><i class="fa-solid fa-clipboard-check"></i> PLANNING MANAGEMENT</h4>
+                    <ul class="mega-link-list">
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'wedding-website-making')">Wedding Website Making</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'event-planner')">Event Planner</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'wedding-planners')">Wedding Planners</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'hospitality-coordination')">Hospitality Coordination</a></li>
+                    </ul>
+                  </div>
+
+                  <!-- Group 5: BRIDAL & GROOM WEARS -->
+                  <div class="vendor-group-card">
+                    <h4 class="mega-col-heading"><i class="fa-solid fa-shirt"></i> BRIDAL &amp; GROOM WEARS</h4>
+                    <ul class="mega-link-list">
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'bridal-wears')">Bridal Wears</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'groom-wears')">Groom Wears</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'bridal-groom-wears')">Bridal &amp; Groom Wears</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'bridal-wears-on-rent')">Bridal Wears on Rent</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'pagdi-wale')">Pagdi Wale <sup class="wws-badge">WWS</sup></a></li>
+                    </ul>
+                  </div>
+
+                  <!-- Group 6: PHOTOGRAPHER -->
+                  <div class="vendor-group-card">
+                    <h4 class="mega-col-heading"><i class="fa-solid fa-camera"></i> PHOTOGRAPHER</h4>
+                    <ul class="mega-link-list">
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'pre-wedding-shoot')">Pre wedding shoot</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'wedding-photographers')">Wedding Photographers <sup class="wws-badge">WWS</sup></a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'drone-cinematography')">Cinematic Films &amp; Drones <sup class="wws-badge">WWS</sup></a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'traditional-albums')">Traditional Albums</a></li>
+                    </ul>
+                  </div>
+
+                  <!-- Group 7: ENTERTAINMENT & OFFICIAL CATALOGUE CONCEPTS -->
+                  <div class="vendor-group-card" style="border-left: 3px solid var(--pink-primary);">
+                    <h4 class="mega-col-heading"><i class="fa-solid fa-music"></i> ENTERTAINMENT</h4>
+                    <ul class="mega-link-list">
+                      <li><a href="#catalogue" class="mega-link" style="font-weight: 600; color: var(--pink-primary);">Sacred Aarti Entry [WWS]</a></li>
+                      <li><a href="#catalogue" class="mega-link" style="font-weight: 600; color: var(--pink-primary);">Royal Welcome &amp; Ganga [WWS]</a></li>
+                      <li><a href="#catalogue" class="mega-link" style="font-weight: 600; color: var(--pink-primary);">Bridal Royalty &amp; Processions</a></li>
+                      <li><a href="#about-atelier" class="mega-link" style="font-weight: 600;">Choreographer (Prachi Rana) <sup class="wws-badge">WWS</sup></a></li>
+                      <li><a href="#about-atelier" class="mega-link">Sam (Mr. House) &amp; Nick (Mr. Lock)</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'band-baaja-ghodi-wala')">Band Baaja &amp; Ghodi Wala</a></li>
+                    </ul>
+                  </div>
+
+                  <!-- Group 8: INVITES & GIFTS -->
+                  <div class="vendor-group-card">
+                    <h4 class="mega-col-heading"><i class="fa-solid fa-gift"></i> INVITES &amp; GIFTS</h4>
+                    <ul class="mega-link-list">
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'wedding-cakes')">Wedding Cakes</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'digital-invitation')">Digital Invitation <sup class="wws-badge">WWS</sup></a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'invitation-cards')">Invitation Cards</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCatalog('vendors', 'wedding-return-gifts')">Wedding Return Gifts</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- 3. GALLERY (dropdown) -->
+          <li class="nav-item has-dropdown">
+            <a href="#gallery" class="nav-link" onclick="handleMobileDropdown(event, this)">
+              GALLERY <i class="fa-solid fa-chevron-down caret-icon"></i>
+            </a>
+            <div class="simple-dropdown">
+              <a href="#gallery" class="simple-dropdown-link"><i class="fa-solid fa-image"></i> Visual Entry Archives</a>
+              <a href="#catalogue" class="simple-dropdown-link"><i class="fa-solid fa-crown"></i> Concept Collection</a>
+              <a href="#video-theater" class="simple-dropdown-link"><i class="fa-solid fa-film"></i> Live Stage Video</a>
+              <a href="#team" class="simple-dropdown-link"><i class="fa-solid fa-user-group"></i> Star Choreography Team</a>
+              <a href="#process" class="simple-dropdown-link"><i class="fa-solid fa-sliders"></i> 4-Step Entry Methodology</a>
+            </div>
+          </li>
+
+          <!-- 4. CULTURE WEDDINGS (mega menu - 3 sections) -->
+          <li class="nav-item has-dropdown">
+            <a href="#directory" class="nav-link" onclick="handleMobileDropdown(event, this)">
+              CULTURE WEDDINGS <i class="fa-solid fa-chevron-down caret-icon"></i>
+            </a>
+            <div class="mega-menu">
+              <div class="container mega-menu-content">
+                <div class="culture-mega-grid">
+                  <!-- Section 1: By Concept -->
+                  <div>
+                    <h4 class="mega-col-heading"><i class="fa-solid fa-lightbulb"></i> By Concept</h4>
+                    <ul class="mega-link-list">
+                      <li><a href="#directory" class="mega-link" onclick="filterByCulture('concept', 'formal-traditional')">Formal / Traditional</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCulture('concept', 'destination')">Destination Celebrations</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCulture('concept', 'royal-palace')">Royal Palace Heritage</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCulture('concept', 'beach-intimate')">Beachside &amp; Sunset Intimate</a></li>
+                    </ul>
+                  </div>
+
+                  <!-- Section 2: By Tradition -->
+                  <div>
+                    <h4 class="mega-col-heading"><i class="fa-solid fa-om"></i> By Tradition</h4>
+                    <ul class="mega-link-list">
+                      <li><a href="#directory" class="mega-link" onclick="filterByCulture('tradition', 'maharashtrian')">Maharashtrian Wedding</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCulture('tradition', 'bengali')">Bengali Wedding</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCulture('tradition', 'sikh-wedding')">Sikh Wedding (Anand Karaj)</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCulture('tradition', 'hindu-weddings')">Hindu Weddings</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCulture('tradition', 'celebrity-weddings')">Celebrity Weddings</a></li>
+                      <li><a href="#directory" class="mega-link" onclick="filterByCulture('tradition', 'marwari-rajputana')">Marwari &amp; Rajputana Royal</a></li>
+                    </ul>
+                  </div>
+
+                  <!-- Section 3: By City -->
+                  <div>
+                    <h4 class="mega-col-heading"><i class="fa-solid fa-city"></i> By City (Traditions &amp; Rituals)</h4>
+                    <div class="culture-cities-grid">
+                      <a href="#directory" class="mega-link" onclick="filterByCity('siliguri')">Siliguri</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('orchha')">Orchha</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('guwahati')">Guwahati</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('jabalpur')">Jabalpur</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('bhopal')">Bhopal</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('gwalior')">Gwalior</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('indore')">Indore</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('bhubaneswar')">Bhubaneswar</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('tonk')">Tonk</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('delhi-ncr')">Delhi Ncr</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('mumbai')">Mumbai</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('bengaluru')">Bengaluru</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('mangalore')">Mangalore</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('chennai')">Chennai</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('hyderabad')">Hyderabad</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('ahmedabad')">Ahmedabad</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('goa')">Goa</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('jaipur')">Jaipur</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('udaipur')">Udaipur</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('jodhpur')">Jodhpur</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('neemrana')">Neemrana</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('lucknow')">Lucknow</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('jim-corbett')">Jim Corbett</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('kolkata')">Kolkata</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('howrah')">Howrah</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('pune')">Pune</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('coorg')">Coorg</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('udupi')">Udupi</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('rishikesh')">Rishikesh</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('shimla')">Shimla</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('mathura')">Mathura</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('agra')">Agra</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('kanpur')">Kanpur</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('varanasi')">Varanasi</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('chandigarh')">Chandigarh</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('ambala')">Ambala</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('rohtak')">Rohtak</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('panipat')">Panipat</a>
+                      <a href="#directory" class="mega-link" onclick="filterByCity('sonipat')">Sonipat</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- 5. BUDGET WEDDING (plain link) -->
+          <li class="nav-item">
+            <a href="#budget-calculator" class="nav-link">BUDGET WEDDING</a>
+          </li>
+
+          <!-- 6. BLOG (dropdown) -->
+          <li class="nav-item has-dropdown">
+            <a href="#blog" class="nav-link" onclick="handleMobileDropdown(event, this)">
+              BLOG <i class="fa-solid fa-chevron-down caret-icon"></i>
+            </a>
+            <div class="simple-dropdown">
+              <a href="#catalogue" class="simple-dropdown-link"><i class="fa-solid fa-book-open"></i> Visual Wedding Entry Catalogue</a>
+              <a href="#catalogue" class="simple-dropdown-link"><i class="fa-solid fa-music"></i> Sacred Aarti &amp; Ganga Concepts</a>
+              <a href="#team" class="simple-dropdown-link"><i class="fa-solid fa-star"></i> Celebrity Choreography Insights</a>
+              <a href="#budget-calculator" class="simple-dropdown-link"><i class="fa-solid fa-calculator"></i> Planning Entries From ₹10,000+</a>
+            </div>
+          </li>
+
+          <!-- 7. WHY WITH US (dropdown) -->
+          <li class="nav-item has-dropdown">
+            <a href="#why-with-us" class="nav-link" onclick="handleMobileDropdown(event, this)">
+              WHY WITH US <i class="fa-solid fa-chevron-down caret-icon"></i>
+            </a>
+            <div class="simple-dropdown">
+              <a href="#why-with-us" class="simple-dropdown-link"><i class="fa-solid fa-shield-check"></i> 10,000+ Choreographies</a>
+              <a href="#team" class="simple-dropdown-link"><i class="fa-solid fa-user-check"></i> Star Background Artists &bull; Nick &amp; Sam</a>
+              <a href="#process" class="simple-dropdown-link"><i class="fa-solid fa-sparkles"></i> 4-Step Tailored Execution</a>
+              <a href="#reviews" class="simple-dropdown-link"><i class="fa-solid fa-star"></i> 500+ Verified Royal Reviews</a>
+            </div>
+          </li>
+
+          <!-- 8. CONTACT US (plain link) -->
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==========================================================
+       HERO PORTAL (YOUR STORY. YOUR ENTRY. YOUR MOMENT.)
+       Page 1 & 2 of Catalogue
+       ========================================================== -->
+  <section class="hero-portal" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-intro">
+          <div class="hero-badge">
+            <i class="fa-solid fa-sparkles"></i> YOUR STORY. YOUR ENTRY. YOUR MOMENT.
+          </div>
+          <h1 class="hero-title">
+            Creating Wedding Moments That <span class="highlight-pink">Stay With You Forever</span>
+          </h1>
+          <p class="hero-desc">
+            NewGen Events creates wedding entries that feel personal, cinematic, and unforgettable. We bring together professional dancers, choreography, music, costumes, props, cultural elements, and soulful storytelling.
+          </p>
+
+          <!-- Metrics Strip from Catalogue Page 2 -->
+          <div class="catalogue-metrics-strip">
+            <div class="metric-cell">
+              <div class="val">10,000+</div>
+              <div class="lbl">Choreographies</div>
+            </div>
+            <div class="metric-cell">
+              <div class="val">CREATIVE</div>
+              <div class="lbl">Dance + Music + Art</div>
+            </div>
+            <div class="metric-cell">
+              <div class="val">CUSTOM</div>
+              <div class="lbl">Built Around You</div>
+            </div>
+          </div>
+
+          <!-- Interactive Search & Discovery Box -->
+          <div class="search-widget-card">
+            <div class="search-widget-title">
+              <i class="fa-solid fa-magnifying-glass"></i> Find Your Signature Entry &amp; Venues
+            </div>
+            <form class="search-widget-form" onsubmit="handleHeroSearch(event)">
+              <div class="form-control-wrap">
+                <label>Catalogue Concept</label>
+                <select class="select-luxury" id="heroCategorySelect">
+                  <option value="all">All Concepts &amp; Services</option>
+                  <option value="sacred-aarti">Sacred Aarti Entry (Soulful &bull; Cultural)</option>
+                  <option value="royal-welcome">Royal Welcome (Elegant &bull; Grand)</option>
+                  <option value="ganga-inspired">Ganga-Inspired Moment</option>
+                  <option value="bridal-royalty">Bridal Royalty &amp; Processions</option>
+                  <option value="illuminated-entry">Illuminated Entry (Glow &bull; Rhythm)</option>
+                  <option value="theatre-dance">Theatre of Dance &bull; Contemporary</option>
+                  <option value="banquet-halls">Palace Venues &amp; Banquets</option>
+                </select>
+              </div>
+
+              <div class="form-control-wrap">
+                <label>Destination City</label>
+                <select class="select-luxury" id="heroCitySelect">
+                  <option value="all">Pan-India (All Cities)</option>
+                  <option value="delhi-ncr">Delhi NCR</option>
+                  <option value="jaipur">Jaipur (Palace Weddings)</option>
+                  <option value="udaipur">Udaipur (Lakeside)</option>
+                  <option value="goa">Goa (Beachside)</option>
+                  <option value="mumbai">Mumbai</option>
+                  <option value="lucknow">Lucknow</option>
+                  <option value="jim-corbett">Jim Corbett</option>
+                </select>
+              </div>
+
+              <div class="form-control-wrap">
+                <label>Budget Tier</label>
+                <select class="select-luxury" id="heroBudgetSelect">
+                  <option value="all">All Packages</option>
+                  <option value="entry-10k">Catalogue Entry (₹10,000+)</option>
+                  <option value="mid">Full Sangeet (₹25,000 - 50,000)</option>
+                  <option value="luxury">Celebrity Production (₹65,000+)</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn-search-hero">
+                <i class="fa-solid fa-magnifying-glass"></i> Explore
+              </button>
+            </form>
+          </div>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="https://wa.me/919654344858?text=Hello%20Prachi%20Rana%2C%20I%20reviewed%20your%20Visual%20Wedding%20Entry%20Catalogue%20and%20want%20to%20plan%20our%20entry." target="_blank" class="btn-pill btn-pill-solid">
+              <i class="fa-brands fa-whatsapp"></i> Inquire Catalogue Dossier
+            </a>
+            <a href="tel:+919654344858" class="btn-pill btn-pill-outline">
+              <i class="fa-solid fa-phone"></i> Direct Call: +91 9654344858
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side: Official Catalogue Hero Cover Visual -->
+        <div class="hero-showcase-card">
+          <div class="hero-media-wrapper">
+            <img src="catalogue_assets/catalogue_hero_cover.png" alt="NewGen Events Visual Wedding Entry Catalogue">
+            <div class="hero-flagship-tag">
+              <i class="fa-solid fa-crown"></i> Official Visual Catalogue
+            </div>
+            <div class="hero-profile-footer">
+              <div class="profile-info">
+                <h3>Prachi Rana</h3>
+                <p>Founder &amp; Creative Director &bull; NewGen Events</p>
+              </div>
+              <a href="#catalogue" class="btn-atelier-book">
+                <i class="fa-solid fa-book-sparkles"></i> View Concepts
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       THE 4-STEP METHODOLOGY (YOUR ENTRY. YOUR WAY.)
+       Page 14 of Catalogue: IDEA -> CREATE -> REHEARSE -> DELIVER
+       ========================================================== -->
+  <section class="section-process" id="process">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">Our Proven Methodology</span>
+        <h2 class="section-title">Your Entry. Your Way.</h2>
+        <p class="section-desc">"We listen first. Then we create. Every concept can be shaped around your personality, wedding theme, music, family, and venue."</p>
+      </div>
+
+      <div class="process-timeline-grid">
+        <div class="process-step-card">
+          <div class="step-badge">1</div>
+          <div class="subtitle">Discovery</div>
+          <h4>IDEA</h4>
+          <p>Tell us what you imagine. Share your couple story, dream songs, bridal attire colors, and grand entry vision.</p>
+        </div>
+
+        <div class="process-step-card">
+          <div class="step-badge">2</div>
+          <div class="subtitle">Artistry</div>
+          <h4>CREATE</h4>
+          <p>We build the complete concept — custom audio medley editing, troupe coordination, and timing cues.</p>
+        </div>
+
+        <div class="process-step-card">
+          <div class="step-badge">3</div>
+          <div class="subtitle">Confidence</div>
+          <h4>REHEARSE</h4>
+          <p>We refine every move with zero anxiety. 100% beginner-friendly steps for non-dancers, parents &amp; friends.</p>
+        </div>
+
+        <div class="process-step-card">
+          <div class="step-badge">4</div>
+          <div class="subtitle">Spotlight</div>
+          <h4>DELIVER</h4>
+          <p>You own the moment! Complete backstage and live stage management as you walk in with breathtaking grace.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       THE OFFICIAL CONCEPT COLLECTION (PAGES 3 - 13 OF PDF)
+       Real Catalogue Concepts with Extracted Images & ₹10,000+ pricing
+       ========================================================== -->
+  <section class="section-catalogue-collection" id="catalogue">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">The Concept Collection</span>
+        <h2 class="section-title">Visual Wedding Entry Catalogue</h2>
+        <p class="section-desc">A visual look at the kind of entries we create — from sacred and traditional to royal, cinematic, and high-energy. Designed around your story, theme, music, and venue.</p>
+      </div>
+
+      <div class="catalogue-grid">
+        <!-- 1. Sacred Aarti Entry (Page 3) -->
+        <div class="catalogue-card" data-cat="sacred-aarti">
+          <div class="catalogue-media-box" onclick="openLightbox('catalogue_assets/sacred_aarti_entry.png')">
+            <img src="catalogue_assets/sacred_aarti_entry.png" alt="Sacred Aarti Entry">
+            <span class="catalogue-tag-pill">Soulful &bull; Cultural &bull; Serene</span>
+            <span class="catalogue-price-badge">₹10,000+</span>
+          </div>
+          <div class="catalogue-content">
+            <div class="catalogue-tagline">Devotional Royalty</div>
+            <h3 class="catalogue-title">Sacred Aarti Entry</h3>
+            <p class="catalogue-desc">A divine entrance accompanied by illuminated traditional brass aarti diyas, temple bells, and serene blessings for an auspicious wedding beginning.</p>
+            <ul class="catalogue-bullets">
+              <li><i class="fa-solid fa-check"></i> Authentic handcrafted brass aarti diyas</li>
+              <li><i class="fa-solid fa-check"></i> Slow devotional couple walking sequence</li>
+              <li><i class="fa-solid fa-check"></i> Studio acoustic sacred chanting &amp; shloka score</li>
+            </ul>
+            <div class="catalogue-btn-row">
+              <a href="https://wa.me/919654344858?text=Hi%20Prachi%2C%20I%20want%20to%20book%20the%20Sacred%20Aarti%20Entry%20(Starting%20%E2%82%B910%2C000%2B)." target="_blank" class="btn-card-wa">
+                <i class="fa-brands fa-whatsapp"></i> Book Entry (₹10k+)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Royal Welcome (Page 4) -->
+        <div class="catalogue-card" data-cat="royal-welcome">
+          <div class="catalogue-media-box" onclick="openLightbox('catalogue_assets/royal_welcome_entry.png')">
+            <img src="catalogue_assets/royal_welcome_entry.png" alt="Royal Welcome">
+            <span class="catalogue-tag-pill">Elegant &bull; Traditional &bull; Grand</span>
+            <span class="catalogue-price-badge">₹10,000+</span>
+          </div>
+          <div class="catalogue-content">
+            <div class="catalogue-tagline">Palace Heritage</div>
+            <h3 class="catalogue-title">Royal Welcome</h3>
+            <p class="catalogue-desc">A regal palace welcome featuring costumed royal escort guards, traditional welcome umbrellas, ceremonial fanfare, and palace grandeur.</p>
+            <ul class="catalogue-bullets">
+              <li><i class="fa-solid fa-check"></i> Traditional royal welcome escorts &amp; umbrellas</li>
+              <li><i class="fa-solid fa-check"></i> Regal coronation entrance timing</li>
+              <li><i class="fa-solid fa-check"></i> Palace trumpet &amp; orchestral sound cues</li>
+            </ul>
+            <div class="catalogue-btn-row">
+              <a href="https://wa.me/919654344858?text=Hi%20Prachi%2C%20I%20am%20interested%20in%20the%20Royal%20Welcome%20Entry." target="_blank" class="btn-card-wa">
+                <i class="fa-brands fa-whatsapp"></i> Book Entry (₹10k+)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Ganga-Inspired Moment (Page 5) -->
+        <div class="catalogue-card" data-cat="ganga-inspired">
+          <div class="catalogue-media-box" onclick="openLightbox('catalogue_assets/ganga_inspired_moment.png')">
+            <img src="catalogue_assets/ganga_inspired_moment.png" alt="Ganga-Inspired Moment">
+            <span class="catalogue-tag-pill">Cultural &bull; Serene &bull; Sacred</span>
+            <span class="catalogue-price-badge">₹10,000+</span>
+          </div>
+          <div class="catalogue-content">
+            <div class="catalogue-tagline">Cultural Movement</div>
+            <h3 class="catalogue-title">Ganga-Inspired Moment</h3>
+            <p class="catalogue-desc">Cultural entries &bull; Aarti concepts &bull; Traditional movement. Designed around your story, wedding theme, music, and palace venue.</p>
+            <ul class="catalogue-bullets">
+              <li><i class="fa-solid fa-check"></i> Flowing silk sacred flags &amp; floral showers</li>
+              <li><i class="fa-solid fa-check"></i> Synchronized cultural dance troupe accompaniment</li>
+              <li><i class="fa-solid fa-check"></i> Bespoke devotional flute &amp; sitar audio score</li>
+            </ul>
+            <div class="catalogue-btn-row">
+              <a href="https://wa.me/919654344858?text=Hi%20Prachi%2C%20I%20am%20interested%20in%20the%20Ganga-Inspired%20Moment%20Entry." target="_blank" class="btn-card-wa">
+                <i class="fa-brands fa-whatsapp"></i> Book Entry (₹10k+)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Bridal Entries & Processions (Page 6) -->
+        <div class="catalogue-card" data-cat="bridal-royalty">
+          <div class="catalogue-media-box" onclick="openLightbox('catalogue_assets/bridal_procession_entry.png')">
+            <img src="catalogue_assets/bridal_procession_entry.png" alt="Bridal Entries & Processions">
+            <span class="catalogue-tag-pill">Floral &bull; Processional &bull; Grace</span>
+            <span class="catalogue-price-badge">₹10,000+</span>
+          </div>
+          <div class="catalogue-content">
+            <div class="catalogue-tagline">Ceremonial Concepts</div>
+            <h3 class="catalogue-title">Bridal Processions</h3>
+            <p class="catalogue-desc">Bridal entries &bull; Processions &bull; Floral &amp; ceremonial concepts. An ethereal arrival surrounded by brothers, bridesmaids, and rose petal canopies.</p>
+            <ul class="catalogue-bullets">
+              <li><i class="fa-solid fa-check"></i> Phoolon ki chadar &amp; botanical floral tunnels</li>
+              <li><i class="fa-solid fa-check"></i> Slow-tempo, emotionally poised walk choreography</li>
+              <li><i class="fa-solid fa-check"></i> Tailored couple acoustic voiceover track</li>
+            </ul>
+            <div class="catalogue-btn-row">
+              <a href="https://wa.me/919654344858?text=Hi%20Prachi%2C%20inquiry%20for%20Bridal%20Processions%20(Starting%20%E2%82%B910%2C000%2B)." target="_blank" class="btn-card-wa">
+                <i class="fa-brands fa-whatsapp"></i> Book Entry (₹10k+)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Bridal Royalty (Page 7) -->
+        <div class="catalogue-card" data-cat="bridal-royalty">
+          <div class="catalogue-media-box" onclick="openLightbox('catalogue_assets/bridal_royalty_1.png')">
+            <img src="catalogue_assets/bridal_royalty_1.png" alt="Bridal Royalty">
+            <span class="catalogue-tag-pill">Classic &bull; Graceful &bull; Timeless</span>
+            <span class="catalogue-price-badge">₹10,000+</span>
+          </div>
+          <div class="catalogue-content">
+            <div class="catalogue-tagline">Timeless Elegance</div>
+            <h3 class="catalogue-title">Bridal Royalty</h3>
+            <p class="catalogue-desc">Designed around your story, theme, music, and venue. Highlighting the bride's natural grace, jewelry, and couture lehenga under stage spotlights.</p>
+            <ul class="catalogue-bullets">
+              <li><i class="fa-solid fa-check"></i> Spotlight synchronization and dramatic pause cues</li>
+              <li><i class="fa-solid fa-check"></i> Posture and poise coaching for 100% non-dancers</li>
+              <li><i class="fa-solid fa-check"></i> Royal escort artists in coordinated couture</li>
+            </ul>
+            <div class="catalogue-btn-row">
+              <a href="https://wa.me/919654344858?text=Hi%20Prachi%2C%20I%20love%20the%20Bridal%20Royalty%20concept!" target="_blank" class="btn-card-wa">
+                <i class="fa-brands fa-whatsapp"></i> Book Entry (₹10k+)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Signature Welcome (Page 8) -->
+        <div class="catalogue-card" data-cat="royal-welcome">
+          <div class="catalogue-media-box" onclick="openLightbox('catalogue_assets/signature_welcome_theatre.png')">
+            <img src="catalogue_assets/signature_welcome_theatre.png" alt="Signature Welcome">
+            <span class="catalogue-tag-pill">Luxury &bull; Grandeur &bull; Theatre</span>
+            <span class="catalogue-price-badge">₹10,000+</span>
+          </div>
+          <div class="catalogue-content">
+            <div class="catalogue-tagline">Floral &bull; Regal &bull; Personal</div>
+            <h3 class="catalogue-title">Signature Welcome</h3>
+            <p class="catalogue-desc">Grand theatrical welcoming featuring floral installations, costumed troupes, and dramatic stage presence to captivate every guest.</p>
+            <ul class="catalogue-bullets">
+              <li><i class="fa-solid fa-check"></i> Theatrical procession staging and guest welcoming</li>
+              <li><i class="fa-solid fa-check"></i> Live musical cues &amp; welcoming fanfares</li>
+              <li><i class="fa-solid fa-check"></i> Tailored for palace, resort, and lawn venues</li>
+            </ul>
+            <div class="catalogue-btn-row">
+              <a href="https://wa.me/919654344858?text=Hi%20Prachi%2C%20inquiry%20for%20Signature%20Welcome%20Entry." target="_blank" class="btn-card-wa">
+                <i class="fa-brands fa-whatsapp"></i> Book Entry (₹10k+)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Majestic Bridal Entry (Page 9) -->
+        <div class="catalogue-card" data-cat="bridal-royalty">
+          <div class="catalogue-media-box" onclick="openLightbox('catalogue_assets/majestic_bridal_entry.png')">
+            <img src="catalogue_assets/majestic_bridal_entry.png" alt="Majestic Bridal Entry">
+            <span class="catalogue-tag-pill">Luxury &bull; Grandeur &bull; Theatre</span>
+            <span class="catalogue-price-badge">₹10,000+</span>
+          </div>
+          <div class="catalogue-content">
+            <div class="catalogue-tagline">Grandeur Redefined</div>
+            <h3 class="catalogue-title">Majestic Bridal Entry</h3>
+            <p class="catalogue-desc">A queen-like entrance with theatrical lighting, low-lying cloud fog, and synchronized escort dancers to make the moment truly unrepeatable.</p>
+            <ul class="catalogue-bullets">
+              <li><i class="fa-solid fa-check"></i> Heavy dry-ice cloud fog covering the aisle</li>
+              <li><i class="fa-solid fa-check"></i> Safe indoor cold sparkular beat drops</li>
+              <li><i class="fa-solid fa-check"></i> Backstage cue management by Prachi Rana's team</li>
+            </ul>
+            <div class="catalogue-btn-row">
+              <a href="https://wa.me/919654344858?text=Hi%20Prachi%2C%20I%20am%20inquiring%20about%20the%20Majestic%20Bridal%20Entry." target="_blank" class="btn-card-wa">
+                <i class="fa-brands fa-whatsapp"></i> Book Entry (₹10k+)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Illuminated Entry (Page 10) -->
+        <div class="catalogue-card" data-cat="illuminated-entry">
+          <div class="catalogue-media-box" onclick="openLightbox('catalogue_assets/illuminated_entry_glow.png')">
+            <img src="catalogue_assets/illuminated_entry_glow.png" alt="Illuminated Entry">
+            <span class="catalogue-tag-pill">Glow &bull; Rhythm &bull; Visual</span>
+            <span class="catalogue-price-badge">₹10,000+</span>
+          </div>
+          <div class="catalogue-content">
+            <div class="catalogue-tagline">Visual Spectacle</div>
+            <h3 class="catalogue-title">Illuminated Entry</h3>
+            <p class="catalogue-desc">Stunning light-play combining cold sparkular fireworks, LED props, rhythmic percussion, and breathtaking visual synchrony.</p>
+            <ul class="catalogue-bullets">
+              <li><i class="fa-solid fa-check"></i> 8+ Sparkular cold pyro fountains (safe indoor/outdoor)</li>
+              <li><i class="fa-solid fa-check"></i> Synchronized lighting &amp; rhythm beat-drop</li>
+              <li><i class="fa-solid fa-check"></i> Glow &amp; visual prop integration</li>
+            </ul>
+            <div class="catalogue-btn-row">
+              <a href="https://wa.me/919654344858?text=Hi%20Prachi%2C%20inquiry%20for%20Illuminated%20Entry%20Concept." target="_blank" class="btn-card-wa">
+                <i class="fa-brands fa-whatsapp"></i> Book Entry (₹10k+)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Contemporary Performance & Theatre of Dance (Pages 11 & 12) -->
+        <div class="catalogue-card" data-cat="theatre-dance">
+          <div class="catalogue-media-box" onclick="openLightbox('catalogue_assets/theatre_of_dance.png')">
+            <img src="catalogue_assets/theatre_of_dance.png" alt="Theatre of Dance">
+            <span class="catalogue-tag-pill">Bold &bull; Artistic &bull; Dynamic</span>
+            <span class="catalogue-price-badge">₹10,000+</span>
+          </div>
+          <div class="catalogue-content">
+            <div class="catalogue-tagline">Contemporary Performance</div>
+            <h3 class="catalogue-title">Theatre of Dance</h3>
+            <p class="catalogue-desc">Style &bull; Movement &bull; Energy. Custom concepts, music-led storytelling, and venue-ready execution with professional background dancers.</p>
+            <ul class="catalogue-bullets">
+              <li><i class="fa-solid fa-check"></i> Professional backing dance troupe (Bollywood/Contemporary)</li>
+              <li><i class="fa-solid fa-check"></i> High-energy couple &amp; squad choreography</li>
+              <li><i class="fa-solid fa-check"></i> Music-led narrative and stage finale</li>
+            </ul>
+            <div class="catalogue-btn-row">
+              <a href="https://wa.me/919654344858?text=Hi%20Prachi%2C%20I%20want%20the%20Theatre%20of%20Dance%20performance%20production." target="_blank" class="btn-card-wa">
+                <i class="fa-brands fa-whatsapp"></i> Book Entry (₹10k+)
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       CORE LEADERSHIP & CHOREOGRAPHY POWERHOUSE (PAGES 15 & 16)
+       Prachi Rana (Founder), Sam (Mr. House), Nick (Mr. Lock)
+       ========================================================== -->
+  <section class="section-team" id="team">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">The Leadership &amp; Powerhouse</span>
+        <h2 class="section-title">Built By A Team You Can Trust</h2>
+        <p class="section-desc">"Because great events aren’t built by one person. They’re built by a team you can trust. ❤️"</p>
+      </div>
+
+      <!-- Founder Banner from Page 15 -->
+      <div class="founder-quote-banner">
+        <div class="founder-avatar">
+          <img src="catalogue_assets/prachi_rana_founder.jpg" alt="Prachi Rana - Founder of NewGen Events">
+        </div>
+        <div class="founder-quote-text">
+          <blockquote>
+            "Give me the responsibility of your special day, and I’ll make every second worth remembering. I trust my people to turn every idea into an experience, handle every detail, and make every second count."
+          </blockquote>
+          <div class="author-meta">
+            Prachi Rana &bull; Founder &amp; Creative Director &bull; NewGen Events
+          </div>
+        </div>
+      </div>
+
+      <!-- Core Co-Founding Members Grid from Page 16 -->
+      <div class="team-members-grid">
+        <!-- 1. Prachi Rana -->
+        <div class="team-member-card">
+          <div class="team-photo-wrap">
+            <img src="catalogue_assets/prachi_rana_founder.jpg" alt="Prachi Rana">
+          </div>
+          <div class="team-body">
+            <span class="team-role-tag">Creative Director &bull; Founder</span>
+            <h4 class="team-name">Prachi Rana</h4>
+            <p class="team-bio">Master of effortless, regal choreography for non-dancers. Oversees concept architecture, bespoke audio medley mixes, and complete live stage execution.</p>
+            <div class="celebrity-tag-row">
+              <span class="celeb-chip">10,000+ Celebrations</span>
+              <span class="celeb-chip">Pan-India Direction</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Sam aka Mr. House -->
+        <div class="team-member-card">
+          <div class="team-photo-wrap">
+            <img src="catalogue_assets/sam_mr_house.jpg" alt="Sam aka Mr. House">
+          </div>
+          <div class="team-body">
+            <span class="team-role-tag">Choreography Powerhouse ✨</span>
+            <h4 class="team-name">Sam aka Mr. House</h4>
+            <p class="team-bio">"From Udaipur to Jaipur, he has managed destination weddings with complete ownership from planning to execution. One person. One responsibility. One unforgettable performance."</p>
+            <div class="celebrity-tag-row">
+              <span class="celeb-chip">Udaipur Palaces</span>
+              <span class="celeb-chip">Jaipur Royal Forts</span>
+              <span class="celeb-chip">Destination Specialist</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Nick aka Mr. Lock -->
+        <div class="team-member-card">
+          <div class="team-photo-wrap">
+            <img src="catalogue_assets/nick_mr_lock.jpg" alt="Nick aka Mr. Lock">
+          </div>
+          <div class="team-body">
+            <span class="team-role-tag">11 Yrs Pro Dancer 🔥</span>
+            <h4 class="team-name">Nick aka Mr. Lock</h4>
+            <p class="team-bio">"With 11 years as a professional background dancer, Nick brings unmatched stage experience to every wedding. Experience. Energy. Precision."</p>
+            <div class="celebrity-tag-row">
+              <span class="celeb-chip">Jennifer Winget's Wedding</span>
+              <span class="celeb-chip">Nupur Sanon</span>
+              <span class="celeb-chip">Mira Rajput</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       CINEMA STAGE VIDEO SECTION
+       ========================================================== -->
+  <section class="section-video" id="video-theater">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">Real Motion Showcase</span>
+        <h2 class="section-title">Witness The Stage Magic Live</h2>
+        <p class="section-desc">Real footage captured from our premier luxury destination celebrations directed by Prachi Rana &amp; the NewGen troupe.</p>
+      </div>
+
+      <div class="video-theater-frame">
+        <div class="video-viewport">
+          <video controls preload="metadata" poster="catalogue_assets/couple_choreography_moment.png">
+            <source src="hero page/prachi.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="video-bottom-strip">
+          <div class="video-caption">
+            <h4>NewGen Events &bull; Live Wedding Choreography &amp; Grand Production</h4>
+            <p>Filmed live on location with couple &amp; professional backing dance artists.</p>
+          </div>
+          <a href="https://wa.me/919654344858?text=Hi%20Prachi%2C%20I%20watched%20your%20performance%20video%20and%20want%20to%20reserve%20this%20experience!" target="_blank" class="btn-pill btn-pill-solid">
+            <i class="fa-brands fa-whatsapp"></i> Reserve This Experience
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       VERIFIED VENUE & VENDOR DIRECTORY (#directory)
+       ========================================================== -->
+  <section class="section-directory" id="directory">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">Verified Marketplace</span>
+        <h2 class="section-title">Explore Venues &amp; Verified <span class="wws-badge" style="font-size:12px; vertical-align:middle;">WWS</span> Vendors</h2>
+        <p class="section-desc">Hand-curated, authenticated professionals across 35+ major Indian cities with transparent quotes and direct booking.</p>
+      </div>
+
+      <div class="directory-filter-bar">
+        <div class="filter-tags-scroll" id="directoryFilterChips">
+          <button class="filter-chip active" onclick="applyDirectoryTag('all', this)">All Listings</button>
+          <button class="filter-chip" onclick="applyDirectoryTag('catalogue-entry', this)">Catalogue Entries [₹10k+]</button>
+          <button class="filter-chip" onclick="applyDirectoryTag('banquet-halls', this)">Banquet Halls</button>
+          <button class="filter-chip" onclick="applyDirectoryTag('wedding-photographers', this)">Photographers [WWS]</button>
+          <button class="filter-chip" onclick="applyDirectoryTag('bridal-makeup', this)">Bridal Makeup</button>
+          <button class="filter-chip" onclick="applyDirectoryTag('wedding-caterer', this)">Caterers</button>
+        </div>
+
+        <div class="current-url-breadcrumb" id="directoryBreadcrumb">
+          <i class="fa-solid fa-link" style="color:var(--pink-primary); margin-right:4px;"></i> /vendors/all-cities/all-categories
+        </div>
+      </div>
+
+      <div class="directory-listings-grid" id="directoryCardsGrid">
+        <!-- Card 1: Official Catalogue Entry Suite -->
+        <div class="listing-card" data-category="catalogue-entry" data-city="delhi-ncr">
+          <div class="listing-media-box">
+            <img src="catalogue_assets/sacred_aarti_entry.png" alt="Sacred Aarti & Royal Entries">
+            <span class="listing-badge-tag"><i class="fa-solid fa-crown"></i> OFFICIAL CATALOGUE</span>
+            <div class="listing-rating-pill">★ 5.0 <span>(210+)</span></div>
+          </div>
+          <div class="listing-content">
+            <div class="listing-location"><i class="fa-solid fa-location-dot"></i> Pan-India (Delhi, Jaipur, Udaipur, Goa)</div>
+            <h3 class="listing-title">NewGen Visual Entry Catalogue</h3>
+            <p style="font-size: 13px; color: #6b7280; margin-bottom: 14px;">Sacred Aarti, Royal Welcome, Ganga Moments, Bridal Royalty, Illuminated Entries &amp; Flashmobs.</p>
+            <div class="listing-price-strip">
+              <div class="price-tag">
+                <span class="label">Starting From</span>
+                <span class="val">₹ 10,000+</span>
+              </div>
+              <div class="listing-actions-row">
+                <a href="https://wa.me/919654344858?text=Hi%20Prachi%2C%20inquiry%20for%20Catalogue%20Wedding%20Entry." target="_blank" class="btn-action-wa" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="tel:+919654344858" class="btn-action-call" title="Call"><i class="fa-solid fa-phone"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Udaipur Palace Banquet -->
+        <div class="listing-card" data-category="banquet-halls" data-city="udaipur">
+          <div class="listing-media-box">
+            <img src="catalogue_assets/royal_welcome_entry.png" alt="Royal Palace Banquet Udaipur">
+            <span class="listing-badge-tag"><i class="fa-solid fa-shield-check"></i> PALACE HERITAGE</span>
+            <div class="listing-rating-pill">★ 4.9 <span>(94)</span></div>
+          </div>
+          <div class="listing-content">
+            <div class="listing-location"><i class="fa-solid fa-location-dot"></i> Udaipur, Rajasthan</div>
+            <h3 class="listing-title">Lakeside Royal Palace &amp; Ballroom</h3>
+            <p style="font-size: 13px; color: #6b7280; margin-bottom: 14px;">Waterfront courtyards, regal indoor ballroom with capacity for 800+ guests and royal welcoming.</p>
+            <div class="listing-price-strip">
+              <div class="price-tag">
+                <span class="label">Starting Food Plate</span>
+                <span class="val">₹ 3,500 / plate</span>
+              </div>
+              <div class="listing-actions-row">
+                <a href="https://wa.me/919654344858?text=Hi%2C%20inquiry%20for%20Udaipur%20Palace%20Banquet." target="_blank" class="btn-action-wa" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="tel:+919654344858" class="btn-action-call" title="Call"><i class="fa-solid fa-phone"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Cinematic Photography -->
+        <div class="listing-card" data-category="wedding-photographers" data-city="jaipur">
+          <div class="listing-media-box">
+            <img src="catalogue_assets/illuminated_entry_pyro.png" alt="Cinematic Photography">
+            <span class="listing-badge-tag"><i class="fa-solid fa-camera"></i> WWS BADGE</span>
+            <div class="listing-rating-pill">★ 4.9 <span>(82)</span></div>
+          </div>
+          <div class="listing-content">
+            <div class="listing-location"><i class="fa-solid fa-location-dot"></i> Jaipur &bull; Delhi NCR &bull; Destination</div>
+            <h3 class="listing-title">Artisan Cinematic Lens &amp; Drones</h3>
+            <p style="font-size: 13px; color: #6b7280; margin-bottom: 14px;">Pre-wedding editorial films, candid 4K drone cinematography, same-day video highlights.</p>
+            <div class="listing-price-strip">
+              <div class="price-tag">
+                <span class="label">Per Day Shoot</span>
+                <span class="val">₹ 75,000 / day</span>
+              </div>
+              <div class="listing-actions-row">
+                <a href="https://wa.me/919654344858?text=Hi%2C%20inquiry%20for%20Artisan%20Cinematic%20Photography." target="_blank" class="btn-action-wa" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="tel:+919654344858" class="btn-action-call" title="Call"><i class="fa-solid fa-phone"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Ganga Aarti Entry -->
+        <div class="listing-card" data-category="catalogue-entry" data-city="delhi-ncr">
+          <div class="listing-media-box">
+            <img src="catalogue_assets/ganga_inspired_moment.png" alt="Ganga-Inspired Entry">
+            <span class="listing-badge-tag"><i class="fa-solid fa-om"></i> SPIRITUAL COUTURE</span>
+            <div class="listing-rating-pill">★ 5.0 <span>(110)</span></div>
+          </div>
+          <div class="listing-content">
+            <div class="listing-location"><i class="fa-solid fa-location-dot"></i> Pan-India Palace &amp; Resorts</div>
+            <h3 class="listing-title">Ganga-Inspired Devotional Moment</h3>
+            <p style="font-size: 13px; color: #6b7280; margin-bottom: 14px;">Sacred brass diyas, traditional umbrella procession, Vedic chanting and gentle couple walk.</p>
+            <div class="listing-price-strip">
+              <div class="price-tag">
+                <span class="label">Concept Price</span>
+                <span class="val">₹ 10,000+</span>
+              </div>
+              <div class="listing-actions-row">
+                <a href="https://wa.me/919654344858?text=Hi%20Prachi%2C%20inquiry%20for%20Ganga-Inspired%20Devotional%20Moment." target="_blank" class="btn-action-wa" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="tel:+919654344858" class="btn-action-call" title="Call"><i class="fa-solid fa-phone"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Grand Imperial Lawn Farmhouse -->
+        <div class="listing-card" data-category="banquet-halls" data-city="delhi-ncr">
+          <div class="listing-media-box">
+            <img src="catalogue_assets/bridal_procession_entry.png" alt="Lawn and Farmhouses">
+            <span class="listing-badge-tag"><i class="fa-solid fa-star"></i> LAWN &amp; FARMHOUSE</span>
+            <div class="listing-rating-pill">★ 4.8 <span>(140)</span></div>
+          </div>
+          <div class="listing-content">
+            <div class="listing-location"><i class="fa-solid fa-location-dot"></i> Chattarpur, Delhi NCR</div>
+            <h3 class="listing-title">Grand Imperial Estate &amp; Farmhouse</h3>
+            <p style="font-size: 13px; color: #6b7280; margin-bottom: 14px;">Sprawling 4-acre landscaped green lawn, bespoke floral canopies, ample valet parking.</p>
+            <div class="listing-price-strip">
+              <div class="price-tag">
+                <span class="label">Starting Food Plate</span>
+                <span class="val">₹ 2,200 / plate</span>
+              </div>
+              <div class="listing-actions-row">
+                <a href="https://wa.me/919654344858?text=Hi%2C%20inquiry%20for%20Grand%20Imperial%20Farmhouse." target="_blank" class="btn-action-wa" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="tel:+919654344858" class="btn-action-call" title="Call"><i class="fa-solid fa-phone"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: Contemporary Performance -->
+        <div class="listing-card" data-category="catalogue-entry" data-city="mumbai">
+          <div class="listing-media-box">
+            <img src="catalogue_assets/contemporary_performance.png" alt="Contemporary Performance">
+            <span class="listing-badge-tag"><i class="fa-solid fa-shield-check"></i> WWS SIGNATURE</span>
+            <div class="listing-rating-pill">★ 5.0 <span>(135)</span></div>
+          </div>
+          <div class="listing-content">
+            <div class="listing-location"><i class="fa-solid fa-location-dot"></i> Mumbai &bull; Delhi &bull; Destination</div>
+            <h3 class="listing-title">Contemporary Performance &bull; Theatre</h3>
+            <p style="font-size: 13px; color: #6b7280; margin-bottom: 14px;">Style &bull; Movement &bull; Energy. Full stage direction with Nick, Sam &amp; professional dancers.</p>
+            <div class="listing-price-strip">
+              <div class="price-tag">
+                <span class="label">Package Starting</span>
+                <span class="val">₹ 10,000+</span>
+              </div>
+              <div class="listing-actions-row">
+                <a href="https://wa.me/919654344858?text=Hi%20Prachi%2C%20inquiry%20for%20Contemporary%20Performance%20Entry." target="_blank" class="btn-action-wa" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="tel:+919654344858" class="btn-action-call" title="Call"><i class="fa-solid fa-phone"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       BUDGET WEDDING CALCULATOR & BESPOKE DOSSIER
+       ========================================================== -->
+  <section class="section-quote" id="budget-calculator">
+    <div class="container">
+      <div class="quote-split-grid">
+        <div class="quote-info-col">
+          <span class="section-eyebrow">Smart Budget &amp; Quotes</span>
+          <h2>Tailored To Your Celebration, <span class="highlight-pink">Never Rigid.</span></h2>
+          <p>Every Indian wedding is an unrepeatable celebration. Get transparent quotes directly on WhatsApp based on your destination city, event date, and desired concepts from our Visual Catalogue.</p>
+          
+          <div class="quote-highlight-plaque">
+            <div class="label">Official Catalogue Pricing</div>
+            <div class="amount">Starting ₹ 10,000+</div>
+            <p style="font-size:12px; color:#6b7280; margin-top:4px;">No hidden agency fees &bull; 100% price lock guarantee.</p>
+          </div>
+
+          <div>
+            <a href="tel:+919654344858" class="btn-pill btn-pill-outline">
+              <i class="fa-solid fa-phone"></i> Call Direct: +91 9654344858
+            </a>
+          </div>
+        </div>
+
+        <div class="quote-form-card">
+          <h3>Request Free WhatsApp Quote</h3>
+          <p>Fill your details to receive an instant formatted PDF &amp; estimate on WhatsApp.</p>
+
+          <form onsubmit="handleQuoteSubmit(event)">
+            <div class="form-group-field">
+              <label>Bride &amp; Groom Names</label>
+              <input type="text" id="quoteName" class="input-field-custom" placeholder="e.g. Radhika &amp; Kabir" required>
+            </div>
+
+            <div class="form-group-field">
+              <label>Wedding / Sangeet Date</label>
+              <input type="date" id="quoteDate" class="input-field-custom" required>
+            </div>
+
+            <div class="form-group-field">
+              <label>Destination City &amp; Venue</label>
+              <input type="text" id="quoteCity" class="input-field-custom" placeholder="e.g. Udaipur / Delhi NCR / Goa" required>
+            </div>
+
+            <div class="form-group-field">
+              <label>Selected Catalogue Concept</label>
+              <select id="quoteConcept" class="input-field-custom">
+                <option value="Sacred Aarti Entry (Starting ₹10,000+)">Sacred Aarti Entry (₹10,000+)</option>
+                <option value="Royal Welcome Entry (Starting ₹10,000+)">Royal Welcome Entry (₹10,000+)</option>
+                <option value="Ganga-Inspired Moment (Starting ₹10,000+)">Ganga-Inspired Moment (₹10,000+)</option>
+                <option value="Bridal Royalty & Processions (Starting ₹10,000+)">Bridal Royalty &amp; Processions (₹10,000+)</option>
+                <option value="Signature Welcome (Luxury & Grandeur)">Signature Welcome (Luxury &amp; Grandeur)</option>
+                <option value="Majestic Bridal Entry (Theatrical)">Majestic Bridal Entry (Theatrical)</option>
+                <option value="Illuminated Entry (Glow & Rhythm)">Illuminated Entry (Glow &amp; Rhythm)</option>
+                <option value="Contemporary Performance & Theatre of Dance">Contemporary Performance &amp; Theatre of Dance</option>
+                <option value="Complete Sangeet & Grand Entry Package">Complete Sangeet &amp; Grand Entry Package</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn-submit-quote">
+              <i class="fa-brands fa-whatsapp"></i> Generate WhatsApp Quotation
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       PHOTO GALLERY & VISUAL ARCHIVES
+       ========================================================== -->
+  <section class="section-gallery" id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">Visual Archives</span>
+        <h2 class="section-title">Moments From Real Celebrations</h2>
+        <p class="section-desc">Click any photograph to view high-definition celebration details.</p>
+      </div>
+
+      <div class="gallery-masonry-grid">
+        <div class="gallery-tile" onclick="openLightbox('catalogue_assets/sacred_aarti_entry.png')">
+          <img src="catalogue_assets/sacred_aarti_entry.png" alt="Sacred Aarti Entry">
+          <div class="gallery-tile-overlay">
+            <span class="gallery-tile-cat">Soulful &bull; Cultural</span>
+            <span class="gallery-tile-title">Sacred Aarti Procession</span>
+          </div>
+        </div>
+
+        <div class="gallery-tile" onclick="openLightbox('catalogue_assets/royal_welcome_entry.png')">
+          <img src="catalogue_assets/royal_welcome_entry.png" alt="Royal Welcome Entry">
+          <div class="gallery-tile-overlay">
+            <span class="gallery-tile-cat">Palace Theme</span>
+            <span class="gallery-tile-title">Royal Welcome Entrance</span>
+          </div>
+        </div>
+
+        <div class="gallery-tile" onclick="openLightbox('catalogue_assets/ganga_inspired_moment.png')">
+          <img src="catalogue_assets/ganga_inspired_moment.png" alt="Ganga-Inspired Moment">
+          <div class="gallery-tile-overlay">
+            <span class="gallery-tile-cat">Sacred Tradition</span>
+            <span class="gallery-tile-title">Ganga-Inspired Moment</span>
+          </div>
+        </div>
+
+        <div class="gallery-tile" onclick="openLightbox('catalogue_assets/bridal_procession_entry.png')">
+          <img src="catalogue_assets/bridal_procession_entry.png" alt="Bridal Procession">
+          <div class="gallery-tile-overlay">
+            <span class="gallery-tile-cat">Processional</span>
+            <span class="gallery-tile-title">Floral Bridal Canopy</span>
+          </div>
+        </div>
+
+        <div class="gallery-tile" onclick="openLightbox('catalogue_assets/bridal_royalty_1.png')">
+          <img src="catalogue_assets/bridal_royalty_1.png" alt="Bridal Royalty">
+          <div class="gallery-tile-overlay">
+            <span class="gallery-tile-cat">Timeless</span>
+            <span class="gallery-tile-title">Bridal Royalty Spotlight</span>
+          </div>
+        </div>
+
+        <div class="gallery-tile" onclick="openLightbox('catalogue_assets/illuminated_entry_glow.png')">
+          <img src="catalogue_assets/illuminated_entry_glow.png" alt="Illuminated Entry">
+          <div class="gallery-tile-overlay">
+            <span class="gallery-tile-cat">Glow &bull; Visual</span>
+            <span class="gallery-tile-title">Illuminated Sparkular Entry</span>
+          </div>
+        </div>
+
+        <div class="gallery-tile" onclick="openLightbox('catalogue_assets/theatre_of_dance.png')">
+          <img src="catalogue_assets/theatre_of_dance.png" alt="Theatre of Dance">
+          <div class="gallery-tile-overlay">
+            <span class="gallery-tile-cat">Dynamic</span>
+            <span class="gallery-tile-title">Theatre of Dance Troupe</span>
+          </div>
+        </div>
+
+        <div class="gallery-tile" onclick="openLightbox('catalogue_assets/couple_choreography_moment.png')">
+          <img src="catalogue_assets/couple_choreography_moment.png" alt="Couple Choreography">
+          <div class="gallery-tile-overlay">
+            <span class="gallery-tile-cat">Your Story</span>
+            <span class="gallery-tile-title">Couple Dance Chemistry</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       WHY WITH US & CLIENT REVIEWS
+       ========================================================== -->
+  <section class="section-reviews" id="why-with-us">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">Verified Reviews</span>
+        <h2 class="section-title">Cherished By Couples &amp; Families</h2>
+        <p class="section-desc">Over 500+ happy weddings brought to life with poise, zero stress, and unforgettable elegance.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-bubble">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"Prachi made our Sangeet night pure magic. My husband had never danced before, yet our Sacred Aarti &amp; Couple Dance was the most praised moment of our whole destination wedding!"</p>
+          </div>
+          <div class="review-author-row">
+            <div class="author-initials">RA</div>
+            <div class="author-meta">
+              <h5>Rhea &amp; Aman</h5>
+              <span>Grand Hyatt, Delhi NCR</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-bubble">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"Sam (Mr. House) and Nick (Mr. Lock) brought unbelievable Bollywood energy to our Jaipur fort wedding! The stage execution was flawless down to the exact second."</p>
+          </div>
+          <div class="review-author-row">
+            <div class="author-initials">SK</div>
+            <div class="author-meta">
+              <h5>Simran &amp; Karan</h5>
+              <span>Jaipur Palace Wedding</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-bubble">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">"From custom audio medley track mixing to backstage cue handling, NewGen Events executed everything flawlessly. 10/10 recommend Prachi and her whole team!"</p>
+          </div>
+          <div class="review-author-row">
+            <div class="author-initials">PV</div>
+            <div class="author-meta">
+              <h5>Pooja &amp; Varun</h5>
+              <span>The Leela Palace, Udaipur</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       ABOUT ATELIER SECTION
+       ========================================================== -->
+  <section class="section-quote" id="about-atelier">
+    <div class="container">
+      <div class="quote-split-grid">
+        <div>
+          <span class="section-eyebrow">About NewGen Events</span>
+          <h2>Where Creative Artistry Meets <span class="highlight-pink">Soulful Emotion</span></h2>
+          <p style="font-size:15.5px; color:#4b5563; line-height:1.75; margin-bottom:18px;">
+            Founded by celebrity choreographer <strong>Prachi Rana</strong>, NewGen Events creates wedding entries that feel personal, cinematic, and unforgettable.
+          </p>
+          <p style="font-size:14.5px; color:#6b7280; line-height:1.7; margin-bottom:24px;">
+            With a team including <strong>Sam (Mr. House)</strong> who has directed destination weddings from Udaipur to Jaipur, and <strong>Nick (Mr. Lock)</strong> with 11 years as a professional dancer performing at celebrity celebrations like Jennifer Winget's wedding, Nupur Sanon, and Mira Rajput, we guarantee an unforgettable performance.
+          </p>
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="https://wa.me/919654344858?text=Hello%20Prachi%2C%20I%20would%20like%20to%20discuss%20our%20wedding%20dates." target="_blank" class="btn-pill btn-pill-solid">
+              <i class="fa-brands fa-whatsapp"></i> Chat with Prachi
+            </a>
+            <a href="tel:+919654344858" class="btn-pill btn-pill-outline">
+              <i class="fa-solid fa-phone"></i> +91 9654344858
+            </a>
+          </div>
+        </div>
+        <div>
+          <img src="catalogue_assets/prachi_rana_founder.jpg" alt="Prachi Rana Celebrations" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border:1px solid var(--border-light); max-height:460px; object-fit:cover; width:100%;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       FAQ ACCORDION
+       ========================================================== -->
+  <section class="section-faq" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-eyebrow">Frequently Asked Questions</span>
+        <h2 class="section-title">Everything You Need To Know</h2>
+        <p class="section-desc">Clear answers about booking dates, rehearsal formats, destination travel, and our visual catalogue concepts.</p>
+      </div>
+
+      <div class="faq-wrapper">
+        <div class="faq-item active">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>What are the starting prices for wedding entry concepts?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Our official Visual Wedding Entry Catalogue concepts start at <strong>₹10,000+</strong> (such as Sacred Aarti Entry, Royal Welcome, Ganga-Inspired Moment, and Bridal Processions). Complete sangeet packages and multi-troupe productions are tailored based on city, troupe size, and rehearsals.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>Neither of us is a trained dancer. Can we still perform gracefully?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Over 80% of our couples are complete beginners! Prachi Rana’s signature method specializes in choreographing natural, comfortable movements that look regal, stylish, and effortless on stage without any rehearsal anxiety.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>Who directs destination weddings in Udaipur, Jaipur &amp; Goa?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Our core leadership team—including founder Prachi Rana, Sam (Mr. House) who manages destination weddings with complete planning-to-execution ownership, and Nick (Mr. Lock) with 11 years of professional stage experience—personally travels to coordinate on-site rehearsals and live stage execution.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>Do you create custom audio tracks and voiceovers?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Every concept includes custom sound engineering with smooth beat transitions, personalized couple voiceovers, and timed climax drops tailored to your stage spotlights and pyrotechnics.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       FOOTER & CONTACT
+       ========================================================== -->
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>NEWGEN EVENTS</h4>
+          <p>Visual Wedding Entry Catalogue &bull; Luxury Wedding Choreography, Royal Entries &amp; Verified Wedding Architecture.</p>
+          <div class="footer-social-strip">
+            <a href="https://wa.me/919654344858" target="_blank" class="footer-social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="tel:+919654344858" class="footer-social-btn" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+            <a href="mailto:prachir426@gmail.com" class="footer-social-btn" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Catalogue Concepts</h5>
+          <ul class="footer-links-list">
+            <li><a href="#catalogue">Sacred Aarti Entry (₹10k+)</a></li>
+            <li><a href="#catalogue">Royal Welcome Entry (₹10k+)</a></li>
+            <li><a href="#catalogue">Ganga-Inspired Moment</a></li>
+            <li><a href="#catalogue">Bridal Royalty &amp; Processions</a></li>
+            <li><a href="#catalogue">Illuminated Entry (Glow &bull; Rhythm)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Core Team &amp; Process</h5>
+          <ul class="footer-links-list">
+            <li><a href="#about-atelier">Prachi Rana (Founder)</a></li>
+            <li><a href="#team">Sam (Mr. House)</a></li>
+            <li><a href="#team">Nick (Mr. Lock - 11 Yrs Pro)</a></li>
+            <li><a href="#process">4-Step Entry Methodology</a></li>
+            <li><a href="#budget-calculator">Budget Wedding Calculator</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Direct Contact</h5>
+          <ul class="footer-contact-info">
+            <li><i class="fa-solid fa-phone"></i> <span>+91 9654344858 / +91 8449395900</span></li>
+            <li><i class="fa-solid fa-envelope"></i> <span>prachir426@gmail.com</span></li>
+            <li><i class="fa-solid fa-location-dot"></i> <span>Delhi NCR, Udaipur, Jaipur, Goa &bull; Pan-India</span></li>
+            <li><i class="fa-solid fa-clock"></i> <span>10:00 AM &ndash; 9:00 PM (Direct Support)</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 NewGen Events by Prachi Rana &amp; Band Baaja Barat. All Rights Reserved.</div>
+        <div>Your Story. Your Entry. Your Moment. &bull; Official Visual Catalogue Integration</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================
+       LOGIN & SIGN UP MODAL (INTERACTIVE TABS)
+       ========================================================== -->
+  <div class="modal-overlay" id="authModal" onclick="closeAuthModalOnBg(event)">
+    <div class="auth-modal-card">
+      <button class="modal-close-btn" onclick="closeAuthModal()">&times;</button>
+      <div class="auth-tabs">
+        <button class="auth-tab-btn active" id="tabLoginBtn" onclick="switchAuthTab('login')">Login</button>
+        <button class="auth-tab-btn" id="tabSignupBtn" onclick="switchAuthTab('signup')">Sign Up</button>
+      </div>
+
+      <form class="auth-form active" id="loginForm" onsubmit="handleAuthSubmit(event, 'login')">
+        <div class="form-group-field">
+          <label>Email or Mobile Number</label>
+          <input type="text" class="input-field-custom" placeholder="name@example.com / +91..." required>
+        </div>
+        <div class="form-group-field">
+          <label>Password</label>
+          <input type="password" class="input-field-custom" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="btn-submit-quote">Login to Account</button>
+      </form>
+
+      <form class="auth-form" id="signupForm" onsubmit="handleAuthSubmit(event, 'signup')">
+        <div class="form-group-field">
+          <label>Full Name</label>
+          <input type="text" class="input-field-custom" placeholder="Your Full Name" required>
+        </div>
+        <div class="form-group-field">
+          <label>Mobile Number</label>
+          <input type="tel" class="input-field-custom" placeholder="+91..." required>
+        </div>
+        <div class="form-group-field">
+          <label>Create Password</label>
+          <input type="password" class="input-field-custom" placeholder="••••••••" required>
+        </div>
+        <button type="submit" class="btn-submit-quote">Create Free Account</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Lightbox Viewer Modal -->
+  <div class="lightbox-viewer" id="lightboxViewer" onclick="closeLightboxViewer(event)">
+    <button class="lightbox-close-icon" onclick="closeLightboxDirect()">&times;</button>
+    <img src="" id="lightboxImgTarget" alt="Enlarged Wedding Photo">
+  </div>
+
+  <!-- Floating WhatsApp Pill Button -->
+  <a href="https://wa.me/919654344858?text=Hello%20Prachi%20Rana%2C%20I%20would%20like%20to%20inquire%20about%20your%20Visual%20Wedding%20Entry%20Catalogue." target="_blank" class="floating-whatsapp" aria-label="WhatsApp Concierge">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span>Instant Concierge</span>
+  </a>
+
+  <!-- ==========================================================
+       INTERACTIVE JAVASCRIPT LOGIC
+       ========================================================== -->
+  <script>
+    function expandVenueTypes(btn) {
+      const hiddenList = btn.nextElementSibling;
+      if (hiddenList) {
+        if (hiddenList.style.display === 'none') {
+          hiddenList.style.display = 'block';
+          btn.innerHTML = 'View Less ▲';
+        } else {
+          hiddenList.style.display = 'none';
+          btn.innerHTML = 'View More ▼';
+        }
+      }
+    }
+
+    const mobileNavToggle = document.getElementById('mobileNavToggle');
+    const navList = document.getElementById('navList');
+    const mobileDrawerClose = document.getElementById('mobileDrawerClose');
+
+    if (mobileNavToggle && navList) {
+      mobileNavToggle.addEventListener('click', () => {
+        navList.classList.toggle('mobile-active');
+        if (mobileDrawerClose) mobileDrawerClose.style.display = navList.classList.contains('mobile-active') ? 'block' : 'none';
+      });
+    }
+
+    if (mobileDrawerClose && navList) {
+      mobileDrawerClose.addEventListener('click', () => {
+        navList.classList.remove('mobile-active');
+        mobileDrawerClose.style.display = 'none';
+      });
+    }
+
+    function handleMobileDropdown(event, link) {
+      if (window.innerWidth <= 991) {
+        event.preventDefault();
+        const parentItem = link.closest('.nav-item');
+        if (parentItem) {
+          const isOpen = parentItem.classList.contains('mobile-open');
+          document.querySelectorAll('.nav-item.mobile-open').forEach(item => {
+            if (item !== parentItem) item.classList.remove('mobile-open');
+          });
+          parentItem.classList.toggle('mobile-open', !isOpen);
+        }
+      }
+    }
+
+    function updateBreadcrumb(city, category) {
+      const breadcrumb = document.getElementById('directoryBreadcrumb');
+      if (breadcrumb) {
+        breadcrumb.innerHTML = `<i class="fa-solid fa-link" style="color:var(--pink-primary); margin-right:4px;"></i> /vendors/${city}/${category}`;
+      }
+    }
+
+    function filterByCity(citySlug) {
+      updateBreadcrumb(citySlug, 'all-categories');
+      filterListingCards(citySlug, 'all');
+      smoothScrollToDirectory();
+    }
+
+    function filterByCatalog(type, categorySlug) {
+      updateBreadcrumb('all-cities', categorySlug);
+      filterListingCards('all', categorySlug);
+      smoothScrollToDirectory();
+    }
+
+    function filterByCulture(section, slug) {
+      updateBreadcrumb('culture-weddings', `${section}-${slug}`);
+      filterListingCards('all', 'all');
+      smoothScrollToDirectory();
+    }
+
+    function applyDirectoryTag(categoryTag, btn) {
+      document.querySelectorAll('#directoryFilterChips .filter-chip').forEach(c => c.classList.remove('active'));
+      btn.classList.add('active');
+      updateBreadcrumb('all-cities', categoryTag);
+      filterListingCards('all', categoryTag);
+    }
+
+    function filterListingCards(city, category) {
+      const cards = document.querySelectorAll('#directoryCardsGrid .listing-card');
+      cards.forEach(card => {
+        const cardCat = card.getAttribute('data-category');
+        const cardCity = card.getAttribute('data-city');
+
+        let matchCity = (city === 'all' || cardCity === city);
+        let matchCat = (category === 'all' || cardCat === category);
+
+        if (matchCity && matchCat) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function quickCityFilter(cityValue) {
+      filterByCity(cityValue);
+    }
+
+    function smoothScrollToDirectory() {
+      const dir = document.getElementById('directory');
+      if (dir) {
+        dir.scrollIntoView({ behavior: 'smooth' });
+      }
+      if (navList) {
+        navList.classList.remove('mobile-active');
+        if (mobileDrawerClose) mobileDrawerClose.style.display = 'none';
+      }
+    }
+
+    function handleHeroSearch(e) {
+      e.preventDefault();
+      const cat = document.getElementById('heroCategorySelect').value;
+      const city = document.getElementById('heroCitySelect').value;
+      
+      // If user selected a catalogue concept, scroll smoothly to catalogue section
+      if (cat !== 'all' && cat !== 'banquet-halls') {
+        const catSection = document.getElementById('catalogue');
+        if (catSection) {
+          catSection.scrollIntoView({ behavior: 'smooth' });
+          return;
+        }
+      }
+      
+      updateBreadcrumb(city, cat);
+      filterListingCards(city, cat);
+      smoothScrollToDirectory();
+    }
+
+    function toggleFaq(element) {
+      const item = element.parentElement;
+      const isActive = item.classList.contains('active');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+      if (!isActive) item.classList.add('active');
+    }
+
+    const lightboxViewer = document.getElementById('lightboxViewer');
+    const lightboxImgTarget = document.getElementById('lightboxImgTarget');
+
+    function openLightbox(src) {
+      if (lightboxViewer && lightboxImgTarget) {
+        lightboxImgTarget.src = src;
+        lightboxViewer.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeLightboxViewer(e) {
+      if (e.target === lightboxViewer) closeLightboxDirect();
+    }
+
+    function closeLightboxDirect() {
+      if (lightboxViewer) {
+        lightboxViewer.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      }
+    }
+
+    const authModal = document.getElementById('authModal');
+    const tabLoginBtn = document.getElementById('tabLoginBtn');
+    const tabSignupBtn = document.getElementById('tabSignupBtn');
+    const loginForm = document.getElementById('loginForm');
+    const signupForm = document.getElementById('signupForm');
+
+    function openAuthModal(mode) {
+      switchAuthTab(mode);
+      if (authModal) authModal.classList.add('active');
+    }
+
+    function closeAuthModal() {
+      if (authModal) authModal.classList.remove('active');
+    }
+
+    function closeAuthModalOnBg(e) {
+      if (e.target === authModal) closeAuthModal();
+    }
+
+    function switchAuthTab(mode) {
+      if (mode === 'login') {
+        tabLoginBtn.classList.add('active');
+        tabSignupBtn.classList.remove('active');
+        loginForm.classList.add('active');
+        signupForm.classList.remove('active');
+      } else {
+        tabSignupBtn.classList.add('active');
+        tabLoginBtn.classList.remove('active');
+        signupForm.classList.add('active');
+        loginForm.classList.remove('active');
+      }
+    }
+
+    function handleAuthSubmit(e, type) {
+      e.preventDefault();
+      alert(`Welcome to NewGen Events! You have successfully submitted the ${type === 'login' ? 'login' : 'sign up'} form.`);
+      closeAuthModal();
+    }
+
+    function handleQuoteSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('quoteName').value;
+      const date = document.getElementById('quoteDate').value;
+      const city = document.getElementById('quoteCity').value;
+      const concept = document.getElementById('quoteConcept').value;
+
+      const message = "Hello NewGen Events & Prachi Rana!%0A%0A" +
+                      "I would like to request an instant quotation from the Visual Wedding Entry Catalogue:%0A" +
+                      "• *Couple Name:* " + encodeURIComponent(name) + "%0A" +
+                      "• *Event Date:* " + encodeURIComponent(date) + "%0A" +
+                      "• *Destination & City:* " + encodeURIComponent(city) + "%0A" +
+                      "• *Selected Concept:* " + encodeURIComponent(concept);
+
+      const whatsappUrl = "https://wa.me/919654344858?text=" + message;
+      window.open(whatsappUrl, '_blank');
+    }
+  </script>
+</body>
+</html>
